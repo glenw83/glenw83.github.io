@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Affiliation: School of Mathematics and Applied Statistics, University of Wollongong, Australia.
+subtitle: 
 
 profile:
   align: right
