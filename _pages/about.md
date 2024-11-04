@@ -2,24 +2,45 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Affiliation: School of Mathematics and Applied Statistics, University of Wollongong, Australia.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Building 39C, Office 184</p>
+    <p>Northfields Ave</p>
+    <p>Wollongong, NSW, Australia</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a mathematician currently based at the University of Wollongong in Australia.
+I love geometry and analysis, and have a wide range of interests that combine these two passions.
+My PhD work was on fourth-order geometric evolution equations.
+After my PhD, I was awarded an Alexander von Humboldt Research Fellowship to be taken at the Otto von Guericke Universitaet Magdeburg, with Prof. Dr. Hans-Christoph Grunau.
+After this, I started at the University of Wollongong.
+I have been awarded an ARC Discovery Project, a biennien Peter Schwerdtfeger award, and an AustMS Early Career Teaching Excellence award.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Since my PhD work, my interests have expanded to include (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf):
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+1. Curve and surface diffusion ([14], [22], [44], [45], [49])
+2. Families of fourth order flows ([21], [42], [43], [47])
+3. Elastic, Willmore and Helfrich ([5], [8], [18], [19], [28], [29], [30], [32], [48], [53])
+4. Fire, crystals, and biomembranes ([3], [10], [11], [12], [15], [36], [39], [55], [56])
+5. Chen's conjecture and flow ([4], [7], [40], [46])
+6. Flows of arbitrary order ([17], [25], [26], [34], [35])
+7. Second-order flows ([1], [13], [50], [51], [52])
+8. Ideal flow ([2], [20], [23], [27])
+9. Entropy flow [33]
+10. Sobolev curvature flow ([31], [38])
+
+Links to my ORCiD, Google Scholar, and other external sites are below.
+If you wish to get in touch, please feel free to use my email, also linked below.
+
+**Geometric Analysis Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
+The YouTube channel for our seminar series aimed at PhD students and young researchers is also linked below.
+The homepage of the seminar is [here](https://oz-geom-pde.github.io/).
