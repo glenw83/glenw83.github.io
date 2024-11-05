@@ -44,3 +44,5 @@ If you wish to get in touch, please feel free to use my email, also linked below
 **Geometric Analysis Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
 The YouTube channel for our seminar series aimed at PhD students and young researchers is also linked below.
 The homepage of the seminar is [here](https://oz-geom-pde.github.io/).
+
+<img src="https://glenw83.github.io/assets/img/formal.jpg" onmouseout="this.src='https://glenw83.github.io/assets/img/formal.jpg'" onmouseover="this.src='https://glenw83.github.io/assets/img/casual.jpg'" alt="image" width="268px" height="360px">
