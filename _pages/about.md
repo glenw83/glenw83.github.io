@@ -7,7 +7,7 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Building 39C, Office 184</p>
     <p>Northfields Ave</p>
@@ -23,7 +23,7 @@ I love geometry and analysis, and have a wide range of interests that combine th
 My PhD work was on fourth-order geometric evolution equations.
 After my PhD, I was awarded an Alexander von Humboldt Research Fellowship to be taken at the Otto von Guericke Universitaet Magdeburg, with Prof. Dr. Hans-Christoph Grunau.
 After this, I started at the University of Wollongong.
-I have been awarded an ARC Discovery Project, a biennien Peter Schwerdtfeger award, and an AustMS Early Career Teaching Excellence award.
+I have been awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672), a biennial [Peter Schwerdtfeger award](https://www.humboldtaustralia.org.au/aavhf-award-winners/), and an [AustMS Early Career Teaching Excellence award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/).
 
 Since my PhD work, my interests have expanded to include (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf):
 
