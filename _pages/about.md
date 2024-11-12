@@ -25,7 +25,7 @@ After my PhD, I was awarded an Alexander von Humboldt Research Fellowship to be 
 After this, I started at the University of Wollongong.
 I have been awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672), a biennial [Peter Schwerdtfeger award](https://www.humboldtaustralia.org.au/aavhf-award-winners/), and an [AustMS Early Career Teaching Excellence award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/).
 
-Since my PhD work, my interests have expanded to include (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf):
+Since my PhD work, my interests have expanded to include (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf)):
 
 1. Curve and surface diffusion ([14], [22], [44], [45], [49])
 2. Families of fourth order flows ([21], [42], [43], [47])
