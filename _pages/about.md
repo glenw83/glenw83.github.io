@@ -18,11 +18,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am currently an [ARC Future Fellow](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880), for the years 2026-2030. This project is concerned with shedding new light on the Cartan-Hadamard conjecture and Yau's problem on the equivalence of plane curves. I am also a CI on an [ARC Discovery Project](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080), for 2025-2027.
-This project is concerned with using mathematics to model and study the dynamics of bushfires.
-Previously I was awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672), concerned with a number of problems in geometric flows.
-I was awarded a biennial [Peter Schwerdtfeger award](https://www.humboldtaustralia.org.au/aavhf-award-winners/), and an [AustMS Early Career Teaching Excellence award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/).
-
 I'm a mathematician at the University of Wollongong (Australia) working at the interface of geometry and analysis, with a particular focus on the dynamics of geometric evolution equations and higher-order flows. My PhD examined fourth-order geometric evolution equations. After that, I held an Alexander von Humboldt Research Fellowship at Otto von Guericke Universität Magdeburg with Prof. Dr. Hans-Christoph Grunau, continuing work on the dynamics of higher-order geometric flows.
 
 At UOW I pursue questions across geometric analysis and its applications. I'm an [ARC Future Fellow (2026–2030)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880), developing new perspectives on the Cartan–Hadamard conjecture and on Yau's problem concerning the equivalence of plane curves. I'm also a Chief Investigator on an [ARC Discovery Project (2025–2027)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080) using mathematics to model the dynamics of bushfires. Previously I was awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672) on problems in geometric flows.
