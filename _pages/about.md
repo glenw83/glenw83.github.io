@@ -38,9 +38,11 @@ Since my PhD work, my interests have expanded to include (the numbers in bracket
 9. Entropy flow [33]
 10. Sobolev curvature flow ([31], [38])
 
-Links to my ORCiD, Google Scholar, and other external sites are below.
-If you wish to get in touch, please feel free to use my email, also linked below.
+Links to my ORCiD, Google Scholar, and other external sites are in the header and footer of this page.
+If you wish to get in touch, please feel free to use my email.
 
 **Geometric Analysis Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
 The YouTube channel for our seminar series aimed at PhD students and young researchers is also linked below.
 The homepage of the seminar is [here](https://oz-geom-pde.github.io/).
+
+**Editorial work**. I am on the editorial board for Journal of Evolution Equations ([link](https://link.springer.com/journal/28)) 2025-present, and the Bulletin of the Australian Mathematical Society ([link](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society)) 2025-present. I have served as guest editor for the MATRIX Annals ([link](https://www.matrix-inst.org.au/book-series/)) for special issues attached to conferences held at MATRIX that I have organised.
