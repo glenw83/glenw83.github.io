@@ -356,7 +356,7 @@ scholar:
 #  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords:
+  filtered_bibtex_keywords:
   [
     abbr,
     abstract,
@@ -384,11 +384,20 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 6 # leave blank to always show all authors
-more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
+  max_author_limit: 6 # leave blank to always show all authors
+  more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 #enable_publication_thumbnails: false
+  sort_by: "year,month"
+  order: "descending,descending"
+  group_by: none
+
+  bibliography_list_tag: ol
+  bibliography_list_attributes:
+    class: bibliography
+    reversed: reversed   # boolean HTML attribute
+  bibliography_item_tag: li
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
