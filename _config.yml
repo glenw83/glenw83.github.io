@@ -94,7 +94,7 @@ osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: G-1735-2014 # your ID on Publons
 quora_username: # your Quora username
-research_gate_profile: # your profile on ResearchGate
+research_gate_profile: https://www.researchgate.net/profile/Glen-Wheeler-2 # your profile on ResearchGate
 scholar_userid: viWU5NYAAAAJ # your Google Scholar ID
 scopus_id: 8681036600 # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
@@ -323,25 +323,37 @@ scholar:
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
 
-  replace_strings: true
-  join_strings: true
+  # Sort newest -> oldest for display
+  sort_by: "year,month"
+  order: "descending,descending"
 
-  details_dir: bibliography
-  details_link: Details
+  # Make the HTML container an ordered list that counts down (N, N-1, …, 1)
+  bibliography_list_tag: "ol reversed"
+  bibliography_item_tag: "li"
 
-  query: "@*"
-  group_by: year
-  group_order: descending
+  # Important: use a single list so numbering doesn’t restart per year
+  group_by: none
+  
+#  bibtex_filters: [latex, smallcaps, superscript]
+
+#  replace_strings: true
+#  join_strings: true
+
+#  details_dir: bibliography
+#  details_link: Details
+
+#  query: "@*"
+#  group_by: year
+#  group_order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
-enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+#enable_publication_badges:
+#  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+#  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+#  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+#  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -357,6 +369,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    doi,
     google_scholar_id,
     html,
     inspirehep_id,
@@ -371,11 +384,11 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: 6 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
-enable_publication_thumbnails: true
+#enable_publication_thumbnails: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
