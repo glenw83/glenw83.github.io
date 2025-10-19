@@ -18,14 +18,18 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a mathematician currently based at the University of Wollongong in Australia.
-I love geometry and analysis, and have a wide range of interests that combine these two passions.
-My PhD work was on fourth-order geometric evolution equations.
-After my PhD, I was awarded an Alexander von Humboldt Research Fellowship to be taken at the Otto von Guericke Universitaet Magdeburg, with Prof. Dr. Hans-Christoph Grunau.
-After this, I started at the University of Wollongong.
-I have been awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672), a biennial [Peter Schwerdtfeger award](https://www.humboldtaustralia.org.au/aavhf-award-winners/), and an [AustMS Early Career Teaching Excellence award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/).
+I am currently an [ARC Future Fellow](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880), for the years 2026-2030. This project is concerned with shedding new light on the Cartan-Hadamard conjecture and Yau's problem on the equivalence of plane curves. I am also a CI on an [ARC Discovery Project](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080), for 2025-2027.
+This project is concerned with using mathematics to model and study the dynamics of bushfires.
+Previously I was awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672), concerned with a number of problems in geometric flows.
+I was awarded a biennial [Peter Schwerdtfeger award](https://www.humboldtaustralia.org.au/aavhf-award-winners/), and an [AustMS Early Career Teaching Excellence award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/).
 
-Since my PhD work, my interests have expanded to include (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf)):
+I'm a mathematician at the University of Wollongong (Australia) working at the interface of geometry and analysis, with a particular focus on the dynamics of geometric evolution equations and higher-order flows. My PhD examined fourth-order geometric evolution equations. After that, I held an Alexander von Humboldt Research Fellowship at Otto von Guericke Universität Magdeburg with Prof. Dr. Hans-Christoph Grunau, continuing work on the dynamics of higher-order geometric flows.
+
+At UOW I pursue questions across geometric analysis and its applications. I'm an [ARC Future Fellow (2026–2030)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880), developing new perspectives on the Cartan–Hadamard conjecture and on Yau's problem concerning the equivalence of plane curves. I'm also a Chief Investigator on an [ARC Discovery Project (2025–2027)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080) using mathematics to model the dynamics of bushfires. Previously I was awarded an [ARC Discovery Project](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672) on problems in geometric flows.
+
+My work and teaching have been recognised with the biennial [Peter Schwerdtfeger Award](https://www.humboldtaustralia.org.au/aavhf-award-winners/) and the [AustMS Early Career Teaching Excellence Award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/). I enjoy clear exposition, collaboration, and finding new connections between curvature, PDE, and real-world phenomena.
+
+I have published specifically on the following topics (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf)):
 
 1. Curve and surface diffusion ([14], [22], [44], [45], [49])
 2. Families of fourth order flows ([21], [42], [43], [47])
