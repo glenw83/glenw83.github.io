@@ -1,0 +1,11 @@
+/* Force numbers to show on the publications list */
+ol.bibliography { 
+  list-style: decimal outside !important;
+  padding-left: 1.75rem;
+}
+ol.bibliography li { 
+  display: list-item; /* ensures ::marker is shown even if other display rules apply */
+}
+
+/* Optional: show bracketed numbers like [12] */
+ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
