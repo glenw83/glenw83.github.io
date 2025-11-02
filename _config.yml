@@ -319,7 +319,8 @@ scholar:
 
   source: /_bibliography/
   bibliography: papers.bib
-  bibliography_template: bib
+  bibliography_template: "{{reference}}"
+  # bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
@@ -329,11 +330,11 @@ scholar:
   order: "descending,descending"
 
   # Make the HTML container an ordered list that counts down (N, N-1, …, 1)
-  bibliography_list_tag: "ol reversed"
-  bibliography_item_tag: "li"
+  #bibliography_list_tag: "ol reversed"
+  #bibliography_item_tag: "li"
 
   # Important: use a single list so numbering doesn’t restart per year
-  group_by: none
+  #group_by: none
   
 #  bibtex_filters: [latex, smallcaps, superscript]
 
