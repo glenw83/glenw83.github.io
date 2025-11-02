@@ -314,7 +314,7 @@ scholar:
   last_name: [Wheeler]
   first_name: [Glen]
 
-  style: apa-5th-edition
+  style: apa
   locale: en
 
   source: /_bibliography/
