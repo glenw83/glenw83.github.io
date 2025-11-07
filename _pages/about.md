@@ -24,18 +24,19 @@ At UOW I pursue questions across geometric analysis and its applications. I'm an
 
 My work and teaching have been recognised with the biennial [Peter Schwerdtfeger Award](https://www.humboldtaustralia.org.au/aavhf-award-winners/) and the [AustMS Early Career Teaching Excellence Award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/). I enjoy clear exposition, collaboration, and finding new connections between curvature, PDE, and real-world phenomena.
 
-I have published specifically on the following topics (the numbers in brackets refer to papers or preprints in my [list of publications](https://glenw83.github.io/assets/pdf/refs.pdf)):
+I have published specifically on the following topics (the numbers in brackets refer to papers in my [list of publications](https://glenw83.github.io/publications/)):
 
-1. Curve and surface diffusion ([14], [22], [44], [45], [49])
-2. Families of fourth order flows ([21], [42], [43], [47])
-3. Elastic, Willmore and Helfrich ([5], [8], [18], [19], [28], [29], [30], [32], [48], [53])
-4. Fire, crystals, and biomembranes ([3], [10], [11], [12], [15], [36], [39], [55], [56])
-5. Chen's conjecture and flow ([4], [7], [40], [46])
-6. Flows of arbitrary order ([17], [25], [26], [34], [35])
-7. Second-order flows ([1], [13], [50], [51], [52])
-8. Ideal flow ([2], [20], [23], [27])
-9. Entropy flow [33]
-10. Sobolev curvature flow ([31], [38])
+1. Curve and surface diffusion ([5] (elliptic), [12], [26], [38], [44], [56], [57])
+2. Families of fourth order flows ([43] (biharmonic heat equation (not geometric)), [49] (elliptic), [58], [59], [60])
+3. Elastic, Willmore and Helfrich ([3] (elliptic), [4], [11], [16] (elliptic), [19], [30] (p-elastic), [47], [48], [51], [52])
+4. Fire, crystals, and biomembranes ([1], [6], [8], [14], [20], [39], [50], [54], [55])
+5. Chen's conjecture and flow ([17], [33], [53])
+6. Flows of arbitrary order ([21], [23], [34], [46]) in particular, of sixth order ([28], [35] (numerical), [37], [42])
+7. Second-order flows ([9], [10], [15], [25], [27], [32] (elliptic), [36], [40], [41], [45])
+8. Ideal flow ([24], [29], [31])
+9. Entropy flow [13]
+10. Sobolev curvature flow ([2], [18])
+11. Invariant flows in fundamental geometries [7]
 
 Links to my ORCiD, Google Scholar, and other external sites are in the header and footer of this page.
 If you wish to get in touch, please feel free to use my email.
