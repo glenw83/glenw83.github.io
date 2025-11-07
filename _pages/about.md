@@ -29,10 +29,10 @@ I have published specifically on the following topics (the numbers in brackets r
 1. Curve and surface diffusion ([5] (elliptic), [12], [26], [38], [44], [56], [57])
 2. Families of fourth order flows ([43] (biharmonic heat equation (not geometric)), [49] (elliptic), [58], [59], [60])
 3. Elastic, Willmore and Helfrich ([3] (elliptic), [4], [11], [16] (elliptic), [19], [30] (p-elastic), [47], [48], [51], [52])
-4. Fire, crystals, and biomembranes ([1], [6], [8], [14], [20], [39], [50], [54], [55])
+4. Fire, crystals, wound healing and biomembranes ([1], [6], [8], [10], [14], [20], [36], [39], [50], [54], [55])
 5. Chen's conjecture and flow ([17], [33], [53])
 6. Flows of arbitrary order ([21], [23], [34], [46]) in particular, of sixth order ([28], [35] (numerical), [37], [42])
-7. Second-order flows ([9], [10], [15], [25], [27], [32] (elliptic), [36], [40], [41], [45])
+7. Second-order flows ([9], [15], [25], [27], [32] (elliptic), [40], [41], [45])
 8. Ideal flow ([24], [29], [31])
 9. Entropy flow [13]
 10. Sobolev curvature flow ([2], [18])
