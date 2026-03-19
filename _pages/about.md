@@ -29,19 +29,43 @@ Previously, I was a Chief Investigator on an [ARC Discovery Project (2015–2018
 
 My work and teaching have been recognised with the biennial [Peter Schwerdtfeger Award](https://www.humboldtaustralia.org.au/aavhf-award-winners/) and the [AustMS Early Career Teaching Excellence Award](https://austms.org.au/awards-grants/awards/the-teaching-excellence-awards/the-2018-early-career-teaching-excellence-award/). I enjoy clear exposition, collaboration, and finding new connections between curvature, PDE, and real-world phenomena.
 
-I have published specifically on the following topics (the numbers in brackets refer to papers in my [list of publications](https://glenw83.github.io/publications/)):
+I have published specifically on the following topics:
 
-1. Curve and surface diffusion ([7] (elliptic), [15], [29], [41], [47], [59], [60])
-2. Families of fourth order flows ([46] (biharmonic heat equation (not geometric)), [52] (elliptic), [61], [62], [63])
-3. Elastic, Willmore and Helfrich ([2] (elastic, curve diffusion, and ideal), [5] (elliptic), [6], [13], [14], [19] (elliptic), [22], [33] (p-elastic), [50], [51], [54], [55])
-4. Fire, thin films, wound healing and biomembranes ([1], [3], [8], [10], [12], [17], [23], [39], [42], [53], [57], [58])
-5. Chen's conjecture and flow ([20], [36], [56])
-6. Flows of arbitrary order ([24], [26], [37], [49]) in particular, of sixth order ([31], [38] (numerical), [40], [45])
-7. Second-order flows ([11], [18], [28], [30], [35] (elliptic), [43], [44], [48])
-8. Ideal flow ([27], [32], [34])
-9. Entropy flow [16]
-10. Sobolev gradient flows ([4], [21])
-11. Invariant flows in fundamental geometries [9]
+#### 1. Curve and surface diffusion
+{% bibliography --query @*[topic=curve_surface_diffusion] %}
+
+#### 2. Families of fourth order flows
+{% bibliography --query @*[topic=families_of_fourth_order_flows] %}
+
+#### 3. Elastic, Willmore and Helfrich
+{% bibliography --query @*[topic=elastic_willmore_helfrich] %}
+
+#### 4. Fire, thin films, wound healing and biomembranes
+{% bibliography --query @*[topic=fire_thin_films_wound_healing_biomembranes] %}
+
+#### 5. Chen’s conjecture and flow
+{% bibliography --query @*[topic=chens_conjecture_and_flow] %}
+
+#### 6. Flows of arbitrary order
+{% bibliography --query @*[topic=arbitrary_order_flows] %}
+
+**Sixth-order flows**
+{% bibliography --query @*[topic=sixth_order_flows] %}
+
+#### 7. Second-order flows
+{% bibliography --query @*[topic=second_order_flows] %}
+
+#### 8. Ideal flow
+{% bibliography --query @*[topic=ideal_flow] %}
+
+#### 9. Entropy flow
+{% bibliography --query @*[topic=entropy_flow] %}
+
+#### 10. Sobolev gradient flows
+{% bibliography --query @*[topic=sobolev_gradient_flows] %}
+
+#### 11. Invariant flows in fundamental geometries
+{% bibliography --query @*[topic=invariant_flows_in_fundamental_geometries] %}
 
 Links to my ORCiD, Google Scholar, and other external sites are in the header and footer of this page.
 If you wish to get in touch, please feel free to use my email.
