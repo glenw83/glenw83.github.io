@@ -46,11 +46,8 @@ I have published specifically on the following topics:
 #### 5. Chen’s conjecture and flow
 {% bibliography --query @*[topic=chens_conjecture_and_flow] %}
 
-#### 6. Flows of arbitrary order
-{% bibliography --query @*[topic=arbitrary_order_flows] %}
-
-**Sixth-order flows**
-{% bibliography --query @*[topic=sixth_order_flows] %}
+#### 6. Polyharmonic and higher-order problems
+{% bibliography --query @*[topic=polyharmonic_and_higher_order_problems] %}
 
 #### 7. Second-order flows
 {% bibliography --query @*[topic=second_order_flows] %}
