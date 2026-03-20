@@ -68,8 +68,11 @@ Links to my ORCiD, Google Scholar, and other external sites are in the header an
 If you wish to get in touch, please feel free to use my email.
 
 **Geometric Analysis Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
-The YouTube channel for our seminar series aimed at PhD students and young researchers is also linked below.
-The homepage of the seminar is [here](https://oz-geom-pde.github.io/).
+The YouTube channel for our national online seminar series aimed at PhD students and young researchers is also linked below.
+The homepage of that seminar is [here](https://oz-geom-pde.github.io/).
+
+**Geometric Analysis Seminar**. I run a local geometric analysis seminar at the University of Wollongong.
+Recent talks, abstracts, and venue details are [on the seminar page]({{ '/seminar/' | relative_url }}).
 
 **Editorial work**. I am on the editorial board for Journal of Evolution Equations ([link](https://link.springer.com/journal/28)) 2025-present, the Bulletin of the Australian Mathematical Society ([link](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society)) 2025-present, and Transactions in Pure and Applied Mathematics ([link](https://bscipub.com/tpam/index)) 2026-present. I have served as guest editor for the MATRIX Annals ([link](https://www.matrix-inst.org.au/book-series/)) for special issues attached to conferences held at MATRIX that I have organised.
 
