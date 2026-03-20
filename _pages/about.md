@@ -52,7 +52,7 @@ I have published specifically on the following topics:
 #### 7. Second-order flows
 {% bibliography --query @*[topic=second_order_flows] %}
 
-#### 8. Ideal flow
+#### 8. Ideal energy: critical points and its flow
 {% bibliography --query @*[topic=ideal_flow] %}
 
 #### 9. Entropy flow
