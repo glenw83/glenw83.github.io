@@ -67,7 +67,7 @@ I have published specifically on the following topics:
 Links to my ORCiD, Google Scholar, and other external sites are in the header and footer of this page.
 If you wish to get in touch, please feel free to use my email.
 
-**Geometric Analysis Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
+**Australian Geometric Analysis and PDE Seminar, and Zulip Server**. If you are interested in joining our Zulip server, please email `geometricanalysiszulip@gmail.com`.
 The YouTube channel for our national online seminar series aimed at PhD students and young researchers is also linked below.
 The homepage of that seminar is [here](https://oz-geom-pde.github.io/).
 
