@@ -19,7 +19,7 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 #### 8 April 2026 — *Poisson equation for the G_2-Laplace operator*
 **Speaker:** Stepan Hudecek (U Queensland)
-**Time and location:** 9:00 - 10:00 8th April 2026, 39C.174
+**Time and location:** 9:00 - 10:00 9th April 2026, 39C.174
 
 *Abstract.* Riemannian manifolds whose holonomy group lies inside the exceptional Lie group G_2 are called G_2-manifolds. These manifolds have several interesting properties (they are Ricci-flat) and are of interest in geometric analysis as well as in mathematical physics and other fields. In this seminar, we will give an introduction to the theory of G_2-manifolds and discuss an associated non-linear Laplacian-type operator whose kernel essentially determines whether a compact manifold is G_2. We will present uniqueness and existence results for the Poisson’s equation of this operator on homogeneous and cohomogeneity-one manifolds.
 
