@@ -17,7 +17,7 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
-#### 8 April 2026 — *Poisson equation for the G_2-Laplace operator*
+#### 9 April 2026 — *Poisson equation for the G_2-Laplace operator*
 **Speaker:** Stepan Hudecek (U Queensland)
 **Time and location:** 9:00 - 10:00 9th April 2026, 39C.174
 
