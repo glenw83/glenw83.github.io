@@ -9,6 +9,10 @@ nav_order: 4
 
 The second workshop in the Australian Geometric Analysis and PDE workshop series was held at the University of Wollongong on Friday 10 April 2026. The day brought together researchers from around Australia for talks and discussion. Speakers were Jiakun Liu (USyd), Mat Langford (ANU), Cale Rankin (UNSW Canberra), and James Stanfield (UOW). Topics ranged across complex geometry, curvature flows, optimal transport, free-boundary problems, and mathematical economics.
 
+<div class="text-center" style="margin: 1.5rem 0 2rem 0;">
+  <img src="{{ '/assets/img/uow-workshop/group.jpg' | relative_url }}" alt="Group photo from the Australian Geometric Analysis and PDE Workshop at UOW" style="width: 100%; max-width: 900px;" />
+</div>
+
 ## Venue and timetable
 
 The workshop was held in Building 24 at UOW.
@@ -24,6 +28,10 @@ If travelling from Sydney by public transport, one option is to take the South C
 
 ## Talks
 
+<div style="margin: 1.5rem 0 1rem 0;">
+  <img src="{{ '/assets/img/uow-workshop/james-stanfield.jpg' | relative_url }}" alt="James Stanfield speaking at the workshop" style="width: 100%; max-width: 700px;" />
+</div>
+
 ### James Stanfield (Wollongong), 10:30am
 **Pluriclosed flows with symmetries**
 
@@ -35,10 +43,18 @@ In this talk, results were presented confirming this conjecture in several symme
 
 This is forthcoming joint work with Elia Fusi, Ramiro Lafuente, and Luigi Vezzoni.
 
+<div style="margin: 1.5rem 0 1rem 0;">
+  <img src="{{ '/assets/img/uow-workshop/jiakun-liu.jpg' | relative_url }}" alt="Jiakun Liu speaking at the workshop" style="width: 100%; max-width: 700px;" />
+</div>
+
 ### Jiakun Liu (USyd), 11:30am
 **Optimal transport and some applications**
 
 This talk gave a brief introduction to the optimal transport problem and discussed applications in geometry, cosmology, and image recognition. Recent results on the free boundary problem in optimal transport were also discussed.
+
+<div style="margin: 1.5rem 0 1rem 0;">
+  <img src="{{ '/assets/img/uow-workshop/mat-langford.jpg' | relative_url }}" alt="Mat Langford speaking at the workshop" style="width: 100%; max-width: 700px;" />
+</div>
 
 ### Mat Langford (ANU), 1:30pm
 **Spherical limits for a class of flows by high powers of curvature**
@@ -47,12 +63,16 @@ This talk established asymptotic roundness for convex hypersurfaces evolving by 
 
 This is joint work with Ben Andrews and James McCoy.
 
+<div style="margin: 1.5rem 0 1rem 0;">
+  <img src="{{ '/assets/img/uow-workshop/cale-rankin.jpg' | relative_url }}" alt="Cale Rankin speaking at the workshop" style="width: 100%; max-width: 700px;" />
+</div>
+
 ### Cale Rankin (UNSW Canberra), 3:00pm
 **On the Hausdorff dimension and singularities of the monopolist's free boundary curve**
 
 This talk discussed recent joint work with McCann and Zhang, and with McCann and O'Brien, on the monopolist's problem. This problem comes from a simple economics model with rich mathematical structure, sitting at the intersection of optimal transport, free boundary problems, and convex analysis. Mathematically, one seeks to minimise a uniformly convex Lagrangian over the space of convex functions. The convexity constraint leads to a free boundary between regions of strict and non-strict convexity, and the solution displays qualitatively different behaviour in these regions. The talk outlined recent results on the configuration of the different domains, Hausdorff estimates for the free boundary, and the structure of solutions in several prototypical cases.
 
-## Photos
+## Photo links
 
 - [Group photo]({{ '/assets/img/workshops/australian-geometric-analysis-pde-uow/group.jpg' | relative_url }})
 - [Speaker photo (10:30 talk)]({{ '/assets/img/workshops/australian-geometric-analysis-pde-uow/speaker-1030.jpg' | relative_url }})
