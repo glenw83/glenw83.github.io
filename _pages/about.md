@@ -74,6 +74,8 @@ The homepage of that seminar is [here](https://oz-geom-pde.github.io/).
 **Geometric Analysis Seminar**. I run a local geometric analysis seminar at the University of Wollongong.
 Recent talks, abstracts, and venue details are [on the seminar page]({{ '/seminar/' | relative_url }}).
 
+**Black Swan Academy of Mathematics**. The University of Wollongong and the School of Mathematics and Physics is proud to announce associate partnership with the Black Swan Academy of Mathematics (see: [BSAM](https://sites.google.com/view/black-swan-academy-of-maths/partnerships-and-branches)). The BSAM is dedicated to fostering high-level mathematical research and education. 
+
 **Australian Geometric Analysis and PDE Workshop at UOW.** I co-organise the Australian Geometric Analysis and PDE Workshop at UOW. Information about the recent workshop, including the timetable, talk titles, abstracts, and photos, is [on the workshop page]({{ '/workshop/' | relative_url }}). This workshop is part of the GAP (Geometric Analysis and PDE) network, I encourage you to check out NSWGAP and VICGAP.
 
 **Editorial work**. I am on the editorial board for Journal of Evolution Equations ([link](https://link.springer.com/journal/28)) 2025-present, the Bulletin of the Australian Mathematical Society ([link](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society)) 2025-present, and Transactions in Pure and Applied Mathematics ([link](https://bscipub.com/tpam/index)) 2026-present. I have served as guest editor for the MATRIX Annals ([link](https://www.matrix-inst.org.au/book-series/)) for special issues attached to conferences held at MATRIX that I have organised.
