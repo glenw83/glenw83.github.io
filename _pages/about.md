@@ -76,7 +76,7 @@ Recent talks, abstracts, and venue details are [on the seminar page]({{ '/semina
 
 **Black Swan Academy of Mathematics**. The University of Wollongong and the School of Mathematics and Physics is proud to announce associate partnership with the Black Swan Academy of Mathematics (see: [BSAM](https://sites.google.com/view/black-swan-academy-of-maths/partnerships-and-branches)). The BSAM is dedicated to fostering high-level mathematical research and education. 
 <img
-  src="{{ '/assets/img/bsam-logo.jpg' | relative_url }}"
+  src="{{ '/assets/img/BSAM_logo_main.jpg' | relative_url }}"
   alt="Black Swan Academy of Mathematics logo"
   width="180"
   style="float: right; margin: 0 0 1em 1.5em;"
