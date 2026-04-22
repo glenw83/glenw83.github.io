@@ -75,6 +75,12 @@ The homepage of that seminar is [here](https://oz-geom-pde.github.io/).
 Recent talks, abstracts, and venue details are [on the seminar page]({{ '/seminar/' | relative_url }}).
 
 **Black Swan Academy of Mathematics**. The University of Wollongong and the School of Mathematics and Physics is proud to announce associate partnership with the Black Swan Academy of Mathematics (see: [BSAM](https://sites.google.com/view/black-swan-academy-of-maths/partnerships-and-branches)). The BSAM is dedicated to fostering high-level mathematical research and education. 
+<img
+  src="{{ '/assets/img/bsam-logo.jpg' | relative_url }}"
+  alt="Black Swan Academy of Mathematics logo"
+  width="180"
+  style="float: right; margin: 0 0 1em 1.5em;"
+/>
 
 **Australian Geometric Analysis and PDE Workshop at UOW.** I co-organise the Australian Geometric Analysis and PDE Workshop at UOW. Information about the recent workshop, including the timetable, talk titles, abstracts, and photos, is [on the workshop page]({{ '/workshop/' | relative_url }}). This workshop is part of the GAP (Geometric Analysis and PDE) network, I encourage you to check out NSWGAP and VICGAP.
 
