@@ -1,0 +1,327 @@
+name: Build CSF demo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  build-csf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout your website repository
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Checkout original curve-shortening demo
+        uses: actions/checkout@v4
+        with:
+          repository: acarapetis/curve-shortening-demo
+          ref: master
+          path: upstream
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build original demo
+        working-directory: upstream
+        run: |
+          npm install --legacy-peer-deps --no-audit --no-fund
+          npm run build
+
+      - name: Create customised CSF page
+        run: |
+          rm -rf site/csf
+          mkdir -p site/csf/build
+
+          cp upstream/COPYING site/csf/COPYING
+          cp upstream/style.css site/csf/style.css
+          cp upstream/build/bundle.min.js site/csf/build/bundle.min.js
+          cp upstream/build/bundle.min.mjs site/csf/build/bundle.min.mjs
+
+          cat >> site/csf/style.css <<'CSS'
+
+          /* Student preset controls added for glenw83.github.io/csf/ */
+          #student-presets {
+            position: fixed;
+            left: 1rem;
+            bottom: 1rem;
+            z-index: 20;
+            box-sizing: border-box;
+            max-width: min(34rem, calc(100vw - 2rem));
+            max-height: calc(100vh - 2rem);
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.94);
+            padding: 0.8rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.6rem;
+            box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.18);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          }
+
+          #student-presets h1 {
+            font-size: 1.1rem;
+            margin: 0 0 0.4rem 0;
+          }
+
+          #student-presets p {
+            margin: 0.3rem 0;
+            line-height: 1.35;
+          }
+
+          #student-presets button {
+            margin: 0.15rem;
+            cursor: pointer;
+          }
+
+          #student-presets textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 4.5rem;
+            margin-top: 0.25rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 0.9rem;
+          }
+
+          #student-presets .hint {
+            font-size: 0.9rem;
+          }
+          CSS
+
+          cat > site/csf/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Curve Shortening Flow — Student Version</title>
+
+            <link rel="stylesheet" href="style.css">
+
+            <script type="module" src="build/bundle.min.mjs"></script>
+            <script nomodule src="build/bundle.min.js"></script>
+          </head>
+
+          <body>
+            <csf-app id="app"></csf-app>
+
+            <section id="student-presets" aria-label="Preset polygon controls">
+              <h1>Preset shapes</h1>
+
+              <p class="hint">
+                Choose a polygon, or type vertices as <code>x,y</code> pairs.
+                Coordinates from about <code>-1</code> to <code>1</code> work well.
+                The polygon is closed automatically.
+              </p>
+
+              <p>
+                <button type="button" data-vertices="-1,-0.8 1,-0.8 0,0.9">
+                  Triangle
+                </button>
+
+                <button type="button" data-vertices="-1,-1 1,-1 1,1 -1,1">
+                  Square
+                </button>
+
+                <button type="button" data-vertices="-1,0 0,-1 1,0 0,1">
+                  Diamond
+                </button>
+
+                <button type="button" data-vertices="0,1 0.95,0.31 0.59,-0.81 -0.59,-0.81 -0.95,0.31">
+                  Pentagon
+                </button>
+
+                <button type="button" data-vertices="1,0 0.5,0.866 -0.5,0.866 -1,0 -0.5,-0.866 0.5,-0.866">
+                  Hexagon
+                </button>
+
+                <button type="button" data-vertices="0,1 0.22,0.31 0.95,0.31 0.36,-0.12 0.59,-0.81 0,-0.38 -0.59,-0.81 -0.36,-0.12 -0.95,0.31 -0.22,0.31">
+                  Star
+                </button>
+              </p>
+
+              <p class="hint">
+                Custom example:
+                <code>-1,-1 1,-1 1,1 -1,1</code>
+              </p>
+
+              <textarea id="vertexInput" spellcheck="false">-1,-1 1,-1 1,1 -1,1</textarea>
+
+              <p>
+                <button type="button" id="loadCustomShape">
+                  Load custom vertices
+                </button>
+              </p>
+            </section>
+
+            <script>
+            (function () {
+              "use strict";
+
+              var PRESET_ID = "__preset_shape__";
+
+              function parseVertices(text) {
+                return text
+                  .trim()
+                  .replace(/[;\n]+/g, " ")
+                  .split(/\s+/)
+                  .filter(Boolean)
+                  .map(function (pair) {
+                    var cleaned = pair.replace(/[()]/g, "");
+                    var xy = cleaned.split(",").map(Number);
+
+                    if (
+                      xy.length !== 2 ||
+                      !Number.isFinite(xy[0]) ||
+                      !Number.isFinite(xy[1])
+                    ) {
+                      throw new Error("Bad vertex: " + pair);
+                    }
+
+                    return xy;
+                  });
+              }
+
+              function withReadyApp(callback) {
+                var app = document.getElementById("app");
+
+                if (
+                  !app ||
+                  !app.canvas ||
+                  !app.touchPaths ||
+                  typeof app.touchEnd !== "function"
+                ) {
+                  requestAnimationFrame(function () {
+                    withReadyApp(callback);
+                  });
+                  return;
+                }
+
+                callback(app);
+              }
+
+              function makeScreenPath(vertices, app) {
+                var canvas = app.canvas;
+                var scale = 0.42 * Math.min(canvas.width, canvas.height);
+                var cx = canvas.width / 2;
+                var cy = canvas.height / 2;
+                var seglength = Math.max(2, app.seglength || 5);
+
+                var screenVertices = vertices.map(function (v) {
+                  return [
+                    cx + v[0] * scale,
+                    cy - v[1] * scale
+                  ];
+                });
+
+                var path = [];
+
+                for (var i = 0; i < screenVertices.length; i++) {
+                  var a = screenVertices[i];
+                  var b = screenVertices[(i + 1) % screenVertices.length];
+
+                  var dx = b[0] - a[0];
+                  var dy = b[1] - a[1];
+                  var length = Math.hypot(dx, dy);
+                  var steps = Math.max(2, Math.ceil(length / seglength));
+
+                  for (var j = 0; j < steps; j++) {
+                    path.push([
+                      a[0] + dx * j / steps,
+                      a[1] + dy * j / steps
+                    ]);
+                  }
+                }
+
+                return path;
+              }
+
+              window.loadPresetVertices = function (text) {
+                var vertices;
+
+                try {
+                  vertices = parseVertices(text);
+                } catch (err) {
+                  alert(err.message);
+                  return;
+                }
+
+                if (vertices.length < 3) {
+                  alert("Please enter at least three vertices.");
+                  return;
+                }
+
+                withReadyApp(function (app) {
+                  app.curves = [];
+                  app.touchPaths.clear();
+
+                  var path = makeScreenPath(vertices, app);
+
+                  /*
+                    Use the app's existing curve-creation method. This keeps the
+                    original simulation code intact while allowing preset polygons.
+                  */
+                  app.touchPaths.set(PRESET_ID, path);
+                  app.touchEnd({ identifier: PRESET_ID });
+
+                  app.paused = false;
+                });
+              };
+
+              document.addEventListener("click", function (event) {
+                var button = event.target.closest("[data-vertices]");
+
+                if (!button) {
+                  return;
+                }
+
+                window.loadPresetVertices(button.getAttribute("data-vertices"));
+              });
+
+              document.getElementById("loadCustomShape").addEventListener("click", function () {
+                window.loadPresetVertices(document.getElementById("vertexInput").value);
+              });
+
+              if (window.customElements && customElements.whenDefined) {
+                customElements.whenDefined("csf-app").then(function () {
+                  window.loadPresetVertices(document.getElementById("vertexInput").value);
+                });
+              }
+            })();
+            </script>
+          </body>
+          </html>
+          HTML
+
+      - name: Commit generated CSF files
+        id: commit
+        run: |
+          cd site
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add csf
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No CSF changes to commit."
+          else
+            git commit -m "Add curve-shortening flow demo"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger website deployment
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd site
+          gh workflow run deploy.yml --ref main
