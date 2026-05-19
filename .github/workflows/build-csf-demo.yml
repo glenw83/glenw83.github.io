@@ -258,18 +258,16 @@ jobs:
                 }
 
                 withReadyApp(function (app) {
-                  app.curves = [];
-                  app.touchPaths.clear();
-
                   var path = makeScreenPath(vertices, app);
-
                   /*
-                    Use the app's existing curve-creation method. This keeps the
-                    original simulation code intact while allowing preset polygons.
+                    Add the preset as another curve, without deleting the curves
+                    that are already evolving on the canvas.
                   */
-                  app.touchPaths.set(PRESET_ID, path);
-                  app.touchEnd({ identifier: PRESET_ID });
-
+                  var presetId = PRESET_ID + "_" + Date.now() + "_" + Math.random();
+                
+                  app.touchPaths.set(presetId, path);
+                  app.touchEnd({ identifier: presetId });
+                
                   app.paused = false;
                 });
               };
