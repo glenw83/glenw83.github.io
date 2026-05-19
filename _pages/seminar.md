@@ -17,6 +17,12 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
+#### 26 May 2026 — *Fenchel-Willmore-Chen inequality under Lower bounds on weighted Ricci curvature*
+**Speaker:** Jihye Lee (Macquarie U)
+**Time and location:** 1:30 - 2:30 26th May 2026, 39C.174
+
+*Abstract.* In this talk, I will present a weighted version of the Fenchel-Willmore-Chen inequality for closed submanifolds in complete noncompact smooth metric measure spaces. Our result recovers several known inequalities and provides a unified proof. I will explain the main ideas of the proof, based on comparison estimates for the normal exponential map and a Riccati-type inequality. If time permits, I will also discuss an isoperimetric inequality under nonnegative 1-weighted Ricci curvature. 
+
 #### 9 April 2026 — *Poisson equation for the G_2-Laplace operator*
 **Speaker:** Stepan Hudecek (U Queensland)
 **Time and location:** 9:00 - 10:00 9th April 2026, 39C.174
