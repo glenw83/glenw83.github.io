@@ -76,6 +76,33 @@ input[type=range], input[type=checkbox] {
     margin-right: 10px;
 }
 
+#student-presets-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+#student-presets-header strong {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+#toggleStudentPresets {
+  flex: none;
+  margin: 0;
+}
+
+#student-presets.is-collapsed {
+  width: auto;
+  max-width: calc(100vw - 2rem);
+  padding: 0.55rem 0.7rem;
+}
+
+#student-presets.is-collapsed #student-presets-body {
+  display: none;
+}
+
 #student-presets label {
   display: block;
   margin: 0.3rem 0;
