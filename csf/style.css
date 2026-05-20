@@ -76,6 +76,31 @@ input[type=range], input[type=checkbox] {
     margin-right: 10px;
 }
 
+#student-presets label {
+  display: block;
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+#student-presets input {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+#student-presets .param-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+@media (max-width: 700px) {
+  #student-presets .param-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Student preset controls added for glenw83.github.io/csf/ */
 #student-presets {
   position: fixed;
