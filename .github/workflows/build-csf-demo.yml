@@ -47,6 +47,31 @@ jobs:
 
           cat >> site/csf/style.css <<'CSS'
 
+          #student-presets label {
+            display: block;
+            margin: 0.3rem 0;
+            font-size: 0.9rem;
+          }
+          
+          #student-presets input {
+            box-sizing: border-box;
+            width: 100%;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 0.9rem;
+          }
+          
+          #student-presets .param-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.4rem;
+          }
+          
+          @media (max-width: 700px) {
+            #student-presets .param-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+
           /* Student preset controls added for glenw83.github.io/csf/ */
           #student-presets {
             position: fixed;
@@ -104,6 +129,8 @@ jobs:
 
             <link rel="stylesheet" href="style.css">
 
+            <script src="https://unpkg.com/mathjs@15.2.0/lib/browser/math.js"></script>
+
             <script type="module" src="build/bundle.min.mjs"></script>
             <script nomodule src="build/bundle.min.js"></script>
           </head>
@@ -156,6 +183,100 @@ jobs:
               <p>
                 <button type="button" id="loadCustomShape">
                   Load custom vertices
+                </button>
+              </p>
+              <hr>
+
+              <h1>Parametric curves</h1>
+              
+              <p class="hint">
+                Type formulas for <code>x(t)</code> and <code>y(t)</code>.
+                Use <code>pi</code> for π and <code>^</code> for powers.
+                The app will sample the curve and close it automatically.
+              </p>
+
+              <p>
+                <button
+                  type="button"
+                  data-param-x="cos(t)"
+                  data-param-y="sin(t)"
+                  data-param-tmin="0"
+                  data-param-tmax="2*pi"
+                  data-param-samples="240">
+                  Circle
+                </button>
+              
+                <button
+                  type="button"
+                  data-param-x="1.4*cos(t)"
+                  data-param-y="0.6*sin(t)"
+                  data-param-tmin="0"
+                  data-param-tmax="2*pi"
+                  data-param-samples="240">
+                  Ellipse
+                </button>
+
+                <button
+                  type="button"
+                  data-param-x="cos(t)^3"
+                  data-param-y="sin(t)^3"
+                  data-param-tmin="0"
+                  data-param-tmax="2*pi"
+                  data-param-samples="240">
+                  Astroid
+                </button>
+              
+                <button
+                  type="button"
+                  data-param-x="sin(3*t)"
+                  data-param-y="sin(2*t)"
+                  data-param-tmin="0"
+                  data-param-tmax="2*pi"
+                  data-param-samples="360">
+                  Lissajous 3:2
+                </button>
+              
+                <button
+                  type="button"
+                  data-param-x="(1-cos(t))*cos(t)"
+                  data-param-y="(1-cos(t))*sin(t)"
+                  data-param-tmin="0"
+                  data-param-tmax="2*pi"
+                  data-param-samples="360">
+                  Cardioid
+                </button>
+              </p>
+              
+              <label>
+                x(t)
+                <input id="paramX" value="cos(t)">
+              </label>
+              
+              <label>
+                y(t)
+                <input id="paramY" value="sin(t)">
+              </label>
+              
+              <div class="param-grid">
+                <label>
+                  t min
+                  <input id="paramTMin" value="0">
+                </label>
+              
+                <label>
+                  t max
+                  <input id="paramTMax" value="2*pi">
+                </label>
+              
+                <label>
+                  samples
+                  <input id="paramSamples" type="number" min="20" max="800" step="10" value="240">
+                </label>
+              </div>
+              
+              <p>
+                <button type="button" id="loadParametricCurve">
+                  Load parametric curve
                 </button>
               </p>
             </section>
@@ -285,7 +406,235 @@ jobs:
               document.getElementById("loadCustomShape").addEventListener("click", function () {
                 window.loadPresetVertices(document.getElementById("vertexInput").value);
               });
-
+              var ALLOWED_SYMBOLS = {
+                t: true,
+                pi: true,
+                PI: true,
+                e: true,
+                E: true
+              };
+              
+              var ALLOWED_FUNCTIONS = {
+                sin: true,
+                cos: true,
+                tan: true,
+                asin: true,
+                acos: true,
+                atan: true,
+                atan2: true,
+                sqrt: true,
+                abs: true,
+                pow: true,
+                exp: true,
+                log: true,
+                log10: true,
+                min: true,
+                max: true,
+                floor: true,
+                ceil: true,
+                round: true
+              };
+              
+              var ALLOWED_NODE_TYPES = {
+                ConstantNode: true,
+                SymbolNode: true,
+                OperatorNode: true,
+                FunctionNode: true,
+                ParenthesisNode: true
+              };
+              
+              var ALLOWED_OPERATORS = {
+                "+": true,
+                "-": true,
+                "*": true,
+                "/": true,
+                "^": true
+              };
+              
+              function compileMathExpression(expr, label) {
+                if (!window.math || typeof math.parse !== "function") {
+                  throw new Error("Math.js has not loaded. Try refreshing the page.");
+                }
+              
+                expr = String(expr || "").trim();
+              
+                if (!expr) {
+                  throw new Error(label + " is empty.");
+                }
+              
+                if (expr.length > 140) {
+                  throw new Error(label + " is too long. Keep formulas under 140 characters.");
+                }
+              
+                var node = math.parse(expr);
+              
+                node.traverse(function (n) {
+                  if (!ALLOWED_NODE_TYPES[n.type]) {
+                    throw new Error(label + " uses unsupported syntax: " + n.type);
+                  }
+              
+                  if (n.type === "SymbolNode") {
+                    if (!ALLOWED_SYMBOLS[n.name] && !ALLOWED_FUNCTIONS[n.name]) {
+                      throw new Error(label + " contains an unknown symbol: " + n.name);
+                    }
+                  }
+              
+                  if (n.type === "FunctionNode") {
+                    var functionName = n.name || (n.fn && n.fn.name);
+              
+                    if (!ALLOWED_FUNCTIONS[functionName]) {
+                      throw new Error(label + " uses an unsupported function: " + functionName);
+                    }
+                  }
+              
+                  if (n.type === "OperatorNode") {
+                    if (!ALLOWED_OPERATORS[n.op]) {
+                      throw new Error(label + " uses an unsupported operator: " + n.op);
+                    }
+                  }
+                });
+              
+                return node.compile();
+              }
+              
+              function evaluateCompiledExpression(code, t, label) {
+                var value = code.evaluate({
+                  t: t,
+                  pi: Math.PI,
+                  PI: Math.PI,
+                  e: Math.E,
+                  E: Math.E
+                });
+              
+                if (value && typeof value.valueOf === "function") {
+                  value = value.valueOf();
+                }
+              
+                if (typeof value !== "number" || !Number.isFinite(value)) {
+                  throw new Error(label + " did not give a finite real number at t = " + t.toFixed(4));
+                }
+              
+                return value;
+              }
+              
+              function evaluateNumberExpression(expr, label) {
+                var code = compileMathExpression(expr, label);
+                return evaluateCompiledExpression(code, 0, label);
+              }
+              
+              function normaliseVertices(vertices) {
+                var minX = Infinity;
+                var maxX = -Infinity;
+                var minY = Infinity;
+                var maxY = -Infinity;
+              
+                vertices.forEach(function (p) {
+                  minX = Math.min(minX, p[0]);
+                  maxX = Math.max(maxX, p[0]);
+                  minY = Math.min(minY, p[1]);
+                  maxY = Math.max(maxY, p[1]);
+                });
+              
+                var width = maxX - minX;
+                var height = maxY - minY;
+                var size = Math.max(width, height);
+              
+                if (!Number.isFinite(size) || size <= 0) {
+                  throw new Error("The curve is too small or degenerate.");
+                }
+              
+                var cx = (minX + maxX) / 2;
+                var cy = (minY + maxY) / 2;
+                var factor = 1.8 / size;
+              
+                return vertices.map(function (p) {
+                  return [
+                    (p[0] - cx) * factor,
+                    (p[1] - cy) * factor
+                  ];
+                });
+              }
+              
+              function sampleParametricCurve(xExpr, yExpr, tMinExpr, tMaxExpr, sampleCount) {
+                var xCode = compileMathExpression(xExpr, "x(t)");
+                var yCode = compileMathExpression(yExpr, "y(t)");
+              
+                var tMin = evaluateNumberExpression(tMinExpr, "t min");
+                var tMax = evaluateNumberExpression(tMaxExpr, "t max");
+              
+                if (!Number.isFinite(tMin) || !Number.isFinite(tMax) || tMax <= tMin) {
+                  throw new Error("Please use a valid interval with t max greater than t min.");
+                }
+              
+                var samples = Math.floor(Number(sampleCount));
+              
+                if (!Number.isFinite(samples)) {
+                  samples = 240;
+                }
+              
+                samples = Math.max(20, Math.min(800, samples));
+              
+                var vertices = [];
+              
+                /*
+                  Use i / samples rather than i / (samples - 1).
+                  This avoids duplicating the first point at t = 2*pi for closed curves.
+                */
+                for (var i = 0; i < samples; i++) {
+                  var t = tMin + (tMax - tMin) * i / samples;
+              
+                  vertices.push([
+                    evaluateCompiledExpression(xCode, t, "x(t)"),
+                    evaluateCompiledExpression(yCode, t, "y(t)")
+                  ]);
+                }
+              
+                return normaliseVertices(vertices);
+              }
+              
+              window.loadParametricCurve = function () {
+                try {
+                  var vertices = sampleParametricCurve(
+                    document.getElementById("paramX").value,
+                    document.getElementById("paramY").value,
+                    document.getElementById("paramTMin").value,
+                    document.getElementById("paramTMax").value,
+                    document.getElementById("paramSamples").value
+                  );
+              
+                  withReadyApp(function (app) {
+                    app.curves = [];
+                    app.touchPaths.clear();
+              
+                    var path = makeScreenPath(vertices, app);
+              
+                    app.touchPaths.set(PRESET_ID, path);
+                    app.touchEnd({ identifier: PRESET_ID });
+              
+                    app.paused = false;
+                  });
+                } catch (err) {
+                  alert(err.message || String(err));
+                }
+              };
+              
+              document.addEventListener("click", function (event) {
+                var button = event.target.closest("[data-param-x]");
+              
+                if (!button) {
+                  return;
+                }
+              
+                document.getElementById("paramX").value = button.getAttribute("data-param-x");
+                document.getElementById("paramY").value = button.getAttribute("data-param-y");
+                document.getElementById("paramTMin").value = button.getAttribute("data-param-tmin");
+                document.getElementById("paramTMax").value = button.getAttribute("data-param-tmax");
+                document.getElementById("paramSamples").value = button.getAttribute("data-param-samples");
+              
+                window.loadParametricCurve();
+              });
+              
+              document.getElementById("loadParametricCurve").addEventListener("click", window.loadParametricCurve);
               if (window.customElements && customElements.whenDefined) {
                 customElements.whenDefined("csf-app").then(function () {
                   window.loadPresetVertices(document.getElementById("vertexInput").value);
