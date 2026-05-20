@@ -47,6 +47,33 @@ jobs:
 
           cat >> site/csf/style.css <<'CSS'
 
+          #student-presets-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+          }
+          
+          #student-presets-header strong {
+            font-size: 1rem;
+            white-space: nowrap;
+          }
+          
+          #toggleStudentPresets {
+            flex: none;
+            margin: 0;
+          }
+          
+          #student-presets.is-collapsed {
+            width: auto;
+            max-width: calc(100vw - 2rem);
+            padding: 0.55rem 0.7rem;
+          }
+          
+          #student-presets.is-collapsed #student-presets-body {
+            display: none;
+          }
+
           #student-presets label {
             display: block;
             margin: 0.3rem 0;
@@ -138,7 +165,20 @@ jobs:
           <body>
             <csf-app id="app"></csf-app>
 
-            <section id="student-presets" aria-label="Preset polygon controls">
+          <section id="student-presets" class="is-collapsed" aria-label="Student curve controls">
+            <div id="student-presets-header">
+              <strong>Curve controls</strong>
+          
+              <button
+                type="button"
+                id="toggleStudentPresets"
+                aria-expanded="false"
+                aria-controls="student-presets-body">
+                Show controls
+              </button>
+            </div>
+          
+            <div id="student-presets-body" hidden>
               <h1>Preset shapes</h1>
 
               <p class="hint">
@@ -279,6 +319,7 @@ jobs:
                   Load parametric curve
                 </button>
               </p>
+              </div>
             </section>
 
             <script>
@@ -286,7 +327,30 @@ jobs:
               "use strict";
 
               var PRESET_ID = "__preset_shape__";
-
+              function initialisePanelToggle() {
+                var panel = document.getElementById("student-presets");
+                var button = document.getElementById("toggleStudentPresets");
+                var body = document.getElementById("student-presets-body");
+              
+                if (!panel || !button || !body) {
+                  return;
+                }
+              
+                function setCollapsed(collapsed) {
+                  panel.classList.toggle("is-collapsed", collapsed);
+                  body.hidden = collapsed;
+              
+                  button.setAttribute("aria-expanded", collapsed ? "false" : "true");
+                  button.textContent = collapsed ? "Show controls" : "Hide controls";
+                }
+              
+                // Start collapsed so the simulation is visible immediately.
+                setCollapsed(true);
+              
+                button.addEventListener("click", function () {
+                  setCollapsed(!body.hidden);
+                });
+              }
               function parseVertices(text) {
                 return text
                   .trim()
@@ -635,6 +699,9 @@ jobs:
               });
               
               document.getElementById("loadParametricCurve").addEventListener("click", window.loadParametricCurve);
+              
+              initialisePanelToggle();
+              
               if (window.customElements && customElements.whenDefined) {
                 customElements.whenDefined("csf-app").then(function () {
                   window.loadPresetVertices(document.getElementById("vertexInput").value);
