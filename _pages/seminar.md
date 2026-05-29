@@ -17,6 +17,12 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
+#### 2 June 2026 — *Snapshot problems for the Euler-Poisson-Darboux equation*
+**Speaker:** Jens Christensen (Colgate U)
+**Time and location:** 1:30 - 2:30 2 June 2026, 39C.174
+
+*Abstract.* Extending and reinterpreting work by Carlos Berenstein and collaborators on ball mean value operators, we explore the connection between snapshot problems for the Euler-Poisson-Darboux equation on Euclidean space and Liouville-type numbers related to the zeros of Bessel functions. Similar questions have been addressed for the wave equation on spheres and other manifolds.This is joint work with Fulton Gonzalez (Tufts University), Tomoyuki Kakehi (University of Tsukuba) and Jue Wang (North China Institute of Technology).
+
 #### 26 May 2026 — *Fenchel-Willmore-Chen inequality under Lower bounds on weighted Ricci curvature*
 **Speaker:** Jihye Lee (Macquarie U)
 **Time and location:** 1:30 - 2:30 26th May 2026, 39C.174
