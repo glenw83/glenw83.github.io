@@ -17,6 +17,12 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
+#### 9 June 2026 — Geodesic Levy Flight and the Foraging Hypothesis
+**Speaker:** Leo Tzou (Melbourne U)
+**Time and location:** 1:30 - 2:30 9 June 2026, 39C.174
+
+Abstract. The Lévy Flight Foraging Hypothesis is a widely accepted dogma which asserts that animals using search strategies allowing for long jumps, also known as Lévy flights, have an evolutionary advantage over those animals using a foraging strategy based on continuous random walks modelled by Brownian motion. However, recent discoveries suggest that this popular belief may not be true in some geometric settings. In this talk we will explore some of the recent progress in this direction which combines Riemannian geometry with stochastic analysis to create a new set of properties for diffusion processes.
+
 #### 2 June 2026 — *Snapshot problems for the Euler-Poisson-Darboux equation*
 **Speaker:** Jens Christensen (Colgate U)
 **Time and location:** 1:30 - 2:30 2 June 2026, 39C.174
