@@ -17,6 +17,24 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
+#### 2 July 2026 — *Closed geodesics on three-dimensional Lie groups*
+**Speaker:** Max Orchard (U Queensland)
+**Time and location:** 11:30 - 12:30, Room 39C.174.
+
+*Abstract.* Geodesics are among the most fundamental objects in Riemannian geometry, with closed geodesics being of particular interest. However, detecting when geodesics are closed is difficult in general, and the problem of classifying all closed geodesics on a given Riemannian manifold is challenging even under strong symmetry assumptions. In this talk, I will focus on three-dimensional Lie groups equipped with arbitrary left-invariant metrics; in this situation, the geodesic equation reduces to a first-order ODE on the Lie algebra known as the Euler-Arnold equation. I will discuss how this reduction can be used to analyse the existence and structure of closed geodesics in this setting.
+
+#### 29 June 2026 - *Conformal geometry, tractor calculus, and the geometry of scale*
+**Speaker:** Rod Gover
+**Time and Location:** 11:00-12:00, Room 39C.174.
+
+*Abstract:* Conformal geometry has a long history of importance in mathematics and physics.  We review the definitions and problems of elementary conformal geometry and then introduce the conformal tractor connection, which leads to the basic invariant calculus of conformal geometry. In this context the prolongation of overdetermined PDE will also be described, as well as why the tools introduced are fundamentally linked to a range of PDE problems that arise in geometric analysis and GR.
+
+#### 23 June 2026 - *Propaganda on complex geometry (and Lie groups)*
+**Speaker:** Joseph Kwong (UQ)
+**Time and Location:** 1:30 - 2:30, Room 39C.174
+
+*Abstract:* A complex manifold is a space that is locally modelled on open subsets of C^n. Two very difficult problems are to construct complex manifolds, and to understand the landscape of all complex manifolds. In this talk, I will explain how Lie groups provide a useful testing ground for both problems.
+
 #### 9 June 2026 — Geodesic Levy Flight and the Foraging Hypothesis
 **Speaker:** Leo Tzou (Melbourne U)
 **Time and location:** 1:30 - 2:30 9 June 2026, 39C.174
