@@ -29,6 +29,12 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 *Abstract:* Conformal geometry has a long history of importance in mathematics and physics.  We review the definitions and problems of elementary conformal geometry and then introduce the conformal tractor connection, which leads to the basic invariant calculus of conformal geometry. In this context the prolongation of overdetermined PDE will also be described, as well as why the tools introduced are fundamentally linked to a range of PDE problems that arise in geometric analysis and GR.
 
+#### 25th of  June 2026 - *Bubble sheets and κ-solutions in four dimensional Ricci flow*
+**Speaker:** Patrick Donovan
+**Time and Location:** 1:30 - 2:30, Room 39C.174
+
+*Abstract:* As discovered by Perelman, the study of ancient Ricci flows which are $\kappa$-noncollapsed is a crucial prerequisite to understanding the singularity behaviour of more general Ricci flows. In dimension three, these so-called "$\kappa$-solutions" have been fully classified through the groundbreaking work of Brendle, Daskalopoulos, and Šešum. Their classification result can be extended to higher dimensions, but only for those Ricci flows that have uniformly positive isotropic curvature (PIC), as well as weakly-positive isotropic curvature of the second type (PIC2); it appears the classification result fails with only minor modifications to the curvature assumption. Indeed, with the alternative assumption of non-negative curvature operator, a rich variety of new examples emerge, as recently constructed by Buttsworth, Lai, and Haslhofer; Haslhofer himself has conjectured that this list of non-negatively curved $\kappa$-solutions is now exhaustive in dimension four. In this talk, we will discuss some recent progress towards resolving Haslhofer's conjecture, including a compactness result for non-negatively curved $\kappa$-solutions in dimension four, and a symmetry improvement result for bubble-sheet regions. This is joint work with Anusha Krishnan and Timothy Buttsworth.
+
 #### 23 June 2026 - *Propaganda on complex geometry (and Lie groups)*
 **Speaker:** Joseph Kwong (UQ)
 **Time and Location:** 1:30 - 2:30, Room 39C.174
