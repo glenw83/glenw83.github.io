@@ -82,4 +82,4 @@ This talk discussed recent joint work with McCann and Zhang, and with McCann and
 
 ## Thanks
 
-Many thanks to the speakers and to everyone who attended and contributed questions and discussion throughout the day. The workshop depended on strong participation and engagement, including from UOW students. Thanks also to the organisers Tim Buttsworth, Paul Bryan, and Valentina Wheeler, and to the local administrative team for their help with the many practical tasks that made the day run smoothly.
+Many thanks to the speakers and to everyone who attended and contributed questions and discussion throughout the day. The workshop depended on strong participation and engagement, including from UOW students. Thanks also to my co-organisers Tim Buttsworth, Paul Bryan, and Valentina Wheeler, and to the local administrative team for their help with the many practical tasks that made the day run smoothly.
