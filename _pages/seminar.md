@@ -17,6 +17,13 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Recent seminars
 
+#### 1 September 2026 — *Pinchoff for surface diffusion*
+**Speaker:** Glen Wheeler (UOW) 
+**Time and location:** 11:30 - 12:30, Room 39C.174.
+
+*Abstract.* In this whiteboard talk I construct surface diffusion flows that drive smooth closed embedded tori to pinchoff in finite time. The flow remains embedded and develops a curvature singularity only at a distinguished point in space-time. Away from this point the flow converges smoothly. I characterise the singularity profile: blowing up around the waist reveals the classical fundamental positive even conical similarity profile first computed numerically by Wong, Miksis, Voorhees and Davis and subsequently analysed by Bernoff, Bertozzi and Witelski. This paper is the culmination of 19 years of research effort, and has enjoyed major funding from DAAD, the Humboldt foundation, and the ARC. I also gratefully acknowledge support from a number of institutions, including the University of Wollongong, Otto-von-Guericke Universitaet Magdeburg, Tohoku University, Warsaw University, and Stanford University.
+
+
 #### 12 August 2026 — *The space of rough Riemannian metrics*
 **Speaker:** Lashi Bandara (Deakin)
 **Time and location:** 11:30 - 12:30, Room 39C.174.
