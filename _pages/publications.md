@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal articles, accepted papers, preprints, conference papers, and edited volumes in reverse chronological order.
+description: Journal articles, accepted papers, preprints, conference papers, and edited volumes, with recent and forthcoming work first.
 nav: true
 nav_order: 2
 profile:
@@ -12,7 +12,7 @@ profile:
   more_info:
 ---
 
-_Last updated: 15 July 2026._
+_Last updated: 28 August 2026._
 
 <!-- _pages/publications.md -->
 

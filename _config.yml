@@ -9,12 +9,13 @@ last_name: Wheeler
 email: glenw@uow.edu.au
 description: > # the ">" symbol means to ignore newlines until "footer_text:"  
   Academic website of Glen E. Wheeler, ARC Future Fellow at the University
-  of Wollongong. Research in geometric analysis, nonlinear partial
-  differential equations, geometric flows, and Riemannian geometry.
+  of Wollongong. Research in geometric analysis, geometric flows and
+  singularity formation, nonlinear partial differential equations, and
+  Riemannian geometry.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Glen Wheeler, geometric analysis, geometric flows, nonlinear PDE, differential geometry, Riemannian geometry, University of Wollongong
+keywords: Glen Wheeler, geometric analysis, geometric flows, surface diffusion flow, singularity formation, pinchoff, nonlinear PDE, differential geometry, Riemannian geometry, University of Wollongong
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -66,7 +67,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://glenw83.github.io/assets/img/casual.jpg # site-wide social preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -82,7 +83,7 @@ flickr_id: # your flickr id
 github_username: glenw83 # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+inspirehep_id: # Inspire HEP author ID
 instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
@@ -96,7 +97,7 @@ osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: G-1735-2014 # your ID on Publons
 quora_username: # your Quora username
-research_gate_profile: https://www.researchgate.net/profile/Glen-Wheeler-2 # your profile on ResearchGate
+research_gate_profile: Glen-Wheeler-2 # your profile on ResearchGate
 scholar_userid: viWU5NYAAAAJ # your Google Scholar ID
 scopus_id: 8681036600 # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
