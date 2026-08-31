@@ -136,6 +136,63 @@ nav_order: 2.5
       </article>
     </div>
 
+    <h3 class="sd-chapter"><span>Phase interfaces coarsen</span></h3>
+    <div class="sd-card-grid">
+      <article class="sd-card sd-card-wide">
+        <figure class="sd-card-visual">
+          <div class="sd-source-pair">
+            <div>
+              <img
+                src="{{ '/assets/img/surface-diffusion/boehme-muller-agcu-2h.jpg' | relative_url }}"
+                alt="Microstructure of a silver-copper binary alloy after two hours at 700 degrees Celsius"
+                loading="lazy"
+              />
+              <span>2 hours</span>
+              <img
+                src="{{ '/assets/img/surface-diffusion/boehme-muller-agcu-5h.jpg' | relative_url }}"
+                alt="Microstructure of the same silver-copper binary alloy after five hours at 700 degrees Celsius"
+                loading="lazy"
+              />
+              <span>5 hours</span>
+            </div>
+            <div>
+              <img
+                src="{{ '/assets/img/surface-diffusion/boehme-muller-agcu-40h.jpg' | relative_url }}"
+                alt="Coarsened microstructure of the same silver-copper binary alloy after forty hours at 700 degrees Celsius"
+                loading="lazy"
+              />
+              <span>40 hours</span>
+            </div>
+          </div>
+          <figcaption>
+            Experimental micrographs of Ag<sub>71</sub>Cu<sub>29</sub> held at 700&nbsp;&deg;C
+            (approximately 970 K) for 2, 5 and 40 hours, B&ouml;hme and M&uuml;ller (2008), Fig. 5.
+            Images courtesy of B&ouml;hme and M&uuml;ller.
+          </figcaption>
+        </figure>
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Ag&ndash;Cu binary alloy · 700 °C · 2008</p>
+          <h3>A binary alloy separates isothermally and coarsens</h3>
+          <p>
+            At a fixed temperature, the fine silver-rich and copper-rich pattern reorganises. Thin
+            regions disappear and the typical size of the remaining regions grows between 2 and 40
+            hours.
+          </p>
+          <p class="sd-pinchoff-lens">
+            <strong>Why is this important? </strong> Because coarsening changes the strength and
+            lifetime of solder joints. Here the measured $$t^{1/3}$$ growth points to
+            bulk-diffusion-driven Ostwald ripening, not surface diffusion. With interface-localised
+            mobility, however, the sharp-interface limit of the Cahn&ndash;Hilliard model is surface
+            diffusion.
+          </p>
+        </div>
+        <a class="sd-paper-link" href="https://doi.org/10.1016/j.commatsci.2007.07.034"
+          >B&ouml;hme and M&uuml;ller, <em>Computational Materials Science</em>
+          <span aria-hidden="true"> </span></a
+        >
+      </article>
+    </div>
+
     <h3 class="sd-chapter"><span>Watch a neck fail</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card sd-card-wide">
@@ -350,6 +407,49 @@ nav_order: 2.5
 
   </section>
 
+  <section class="sd-next" aria-labelledby="sd-scope-title">
+    <p class="sd-section-number">04</p>
+    <div class="sd-next-content">
+      <div>
+        <h2 id="sd-scope-title">When is surface diffusion the right model?</h2>
+        <p>
+          Cahn and Taylor's 1994 overview gives a useful checklist: surface energy is the driving
+          force; matter is transported along the interface rather than through the bulk or the
+          surrounding medium; and the relevant mass is conserved.
+        </p>
+        <p>
+          They distinguish three scenarios. If attachment and detachment are fast, transport along
+          the surface is the bottleneck and Mullins' fourth-order law applies. If surface transport
+          is fast, attachment kinetics controls a different volume-preserving curvature law. If the
+          rates are comparable, their full intermediate law is needed. The material, temperature,
+          crystal orientation and length scale determine which scenario is seen.
+        </p>
+        <a
+          class="sd-paper-link sd-paper-link-inline"
+          href="https://doi.org/10.1016/0956-7151(94)90123-6"
+          >Cahn and Taylor, <em>Acta Metallurgica et Materialia</em>
+          <span aria-hidden="true"> </span></a
+        >
+      </div>
+      <figure class="sd-source-figure sd-next-figure">
+        <img
+          src="{{ '/assets/img/surface-diffusion/carter-roosen-cahn-taylor-1995-fig5.gif' | relative_url }}"
+          alt="Numerical comparison in which a staircase-shaped particle splits under surface diffusion but not under surface-attachment-limited kinetics"
+          loading="lazy"
+        />
+        <figcaption>
+          The same initial staircase under two kinetic laws: light gray is surface diffusion and
+          dark gray is surface-attachment-limited kinetics. The surface-diffusion shape splits; the
+          other does not. Carter, Roosen, Cahn and Taylor (1995), Fig. 5; see
+          <a href="https://doi.org/10.1016/0956-7151(95)00134-H">the article</a> and the
+          <a href="https://www.ctcms.nist.gov/~roosen/SD_SALK/SD_SALK/section3_9.html"
+            >authors' NIST page</a
+          >.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section class="sd-next" aria-labelledby="sd-next-title">
     <p class="sd-section-number">05</p>
     <div class="sd-next-content">
@@ -394,6 +494,11 @@ nav_order: 2.5
       in their captions. Volk et al. (2015) is used under CC BY-NC 3.0. Mullins and Shewmon
       (1959), Figs. 4 and 5, are reproduced at reduced resolution for scholarly commentary; rights
       remain with the publisher.
+    </p>
+    <p>
+      The Ag&ndash;Cu micrographs from B&ouml;hme and M&uuml;ller (2008), Fig. 5, and the kinetic
+      comparison from Carter, Roosen, Cahn and Taylor (1995), Fig. 5, are reproduced at reduced
+      resolution for scholarly commentary; rights remain with the publishers.
     </p>
   </section>
 </div>
