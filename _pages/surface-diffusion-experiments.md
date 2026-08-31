@@ -1,7 +1,7 @@
 ---
 layout: page
-title: experiments
-description: What laboratory experiments tell us about pinchoff by surface diffusion.
+title: surface diffusion in the lab
+description: Historical observations of motion by surface diffusion.
 permalink: /surface-diffusion-experiments/
 nav: true
 nav_order: 2.5
@@ -10,12 +10,11 @@ nav_order: 2.5
 <div class="sd-gallery-page">
   <section class="sd-hero" aria-labelledby="sd-hero-title">
     <div class="sd-hero-copy">
-      <p class="sd-eyebrow">Surface diffusion · real experiments</p>
-      <h2 id="sd-hero-title">When a solid flows along its own surface</h2>
+      <p class="sd-eyebrow">Surface diffusion in real life</p>
+      <h2 id="sd-hero-title">A solid flowing along its own surface</h2>
       <p class="sd-deck">
-        A solid need not melt to change shape. Atoms can migrate along its surface, driven by
-        differences in curvature. A groove can deepen, a wire can bead up, and a narrow neck can
-        break.
+        In many physical systems, an evolving solid may change shape without losing volume. Atoms can migrate along its surface, driven by
+        differences in curvature. A groove can deepen, a wire can bead up, and a narrow neck can break.
       </p>
       <p>
         These experiments are the physical setting for
@@ -33,8 +32,7 @@ nav_order: 2.5
       />
       <figcaption>
         Numerical rendering of meridians $$r=A\,U(z/A)$$ from the certified profile equation. The
-        last panel is the singular-time double cone $$r=\alpha|z|$$. This is a calculation, not an
-        experimental photograph.
+        last panel is the singular-time double cone $$r=\alpha|z|$$. 
       </figcaption>
     </figure>
 
@@ -43,7 +41,7 @@ nav_order: 2.5
   <section class="sd-primer" aria-labelledby="sd-mullins-title">
     <div>
       <p class="sd-section-number">01</p>
-      <h2 id="sd-mullins-title">The practical question, from Mullins&rsquo; point of view</h2>
+      <h2 id="sd-mullins-title">The practical question, from Mullins' point of view</h2>
     </div>
     <div class="sd-primer-copy">
       <p>
@@ -73,20 +71,20 @@ nav_order: 2.5
           </div>
         </div>
         <figcaption>
-          Left: the groove after 1, 16, and 81 hours at 930&nbsp;&deg;C. Right: its width follows
-          $$w\propto t^{1/4}$$ at both 930&nbsp;&deg;C and 1035&nbsp;&deg;C. Mullins &amp; Shewmon
+          Left: the groove after 1, 16, and 81 hours at 930 degrees Celsius. Right: its width follows
+          $$w\propto t^{1/4}$$ at both 930 degrees and 1035 degrees. Mullins and Shewmon
           (1959), Figs. 4 and 5.
         </figcaption>
       </figure>
 
       <p>
-        The pictures make the point that matters for pinchoff. Surface diffusion is a smoothing law,
+        Surface diffusion is a smoothing law,
         but it is not simply a law that makes every shape rounder. The same fourth-order transport
         that broadens a groove can amplify a long-wave disturbance on a thin cylinder until the
         cylinder loses connectivity.
       </p>
       <a class="sd-paper-link sd-paper-link-inline" href="https://doi.org/10.1016/0001-6160(59)90069-0"
-        >Mullins &amp; Shewmon, <em>Acta Metallurgica</em> <span aria-hidden="true">&nearr;</span></a
+        >Mullins and Shewmon, <em>Acta Metallurgica</em> <span aria-hidden="true"> </span></a
       >
     </div>
 
@@ -96,7 +94,7 @@ nav_order: 2.5
     <div class="sd-section-heading">
       <p class="sd-section-number">02</p>
       <div>
-        <h2 id="sd-gallery-title">Where the motion can be seen&mdash;and why it matters</h2>
+        <h2 id="sd-gallery-title">Examples</h2>
         <p>
           Each example below is built around a figure from the cited paper. Experimental and
           simulated panels are identified in the caption.
@@ -104,7 +102,7 @@ nav_order: 2.5
       </div>
     </div>
 
-    <h3 class="sd-chapter"><span>See the atoms move</span></h3>
+    <h3 class="sd-chapter"><span>Atoms diffuse</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card sd-card-wide">
         <figure class="sd-card-visual sd-visual-atomic">
@@ -115,7 +113,7 @@ nav_order: 2.5
             loading="lazy"
           />
           <figcaption>
-            Experimental in-situ HRTEM sequence, cropped to panels a&ndash;l from Wang et al. (2021),
+            Experimental in-situ HRTEM sequence, cropped to panels a to l from Wang et al. (2021),
             Fig. 2; <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
           </figcaption>
         </figure>
@@ -123,17 +121,17 @@ nav_order: 2.5
           <p class="sd-card-meta">Silver nanowire · room temperature · 2021</p>
           <h3>Surface steps walk across a crystalline solid</h3>
           <p>
-            The atomic lattice remains visible while surface steps migrate along a 6.6&nbsp;nm silver
+            The atomic lattice remains visible while surface steps migrate along a 6.6 nm silver
             wire under tension. When two steps overlap, a partial dislocation nucleates. The image
             makes the microscopic carrier of surface diffusion visible rather than merely inferred.
           </p>
           <p class="sd-pinchoff-lens">
-            <strong>Why it matters.</strong> Surface motion can change the mechanical strength of a
+            <strong>Why is this important? </strong> Because surface motion can change the mechanical strength of a
             nanoscale component even when the component remains solid.
           </p>
         </div>
         <a class="sd-paper-link" href="https://doi.org/10.1038/s41467-021-25542-2"
-          >Wang et al., <em>Nature Communications</em> <span aria-hidden="true">&nearr;</span></a
+          >Wang et al., <em>Nature Communications</em> <span aria-hidden="true"> </span></a
         >
       </article>
     </div>
@@ -163,19 +161,19 @@ nav_order: 2.5
             regions and accumulating in the thicker parts until the wire separates.
           </p>
           <p class="sd-pinchoff-lens">
-            <strong>Why it matters.</strong> The experiment records the topology change, while the
+            <strong>Why is this important? </strong> The experiment records the topology change, while the
             model tests whether thermally activated surface motion can reproduce its timing and
             location.
           </p>
         </div>
         <a class="sd-paper-link" href="https://doi.org/10.1039/C7CP00463J"
           >Schnedlitz et al., <em>Physical Chemistry Chemical Physics</em>
-          <span aria-hidden="true">&nearr;</span></a
+          <span aria-hidden="true"> </span></a
         >
       </article>
     </div>
 
-    <h3 class="sd-chapter"><span>See the engineering consequence</span></h3>
+    <h3 class="sd-chapter"><span>An engineering consequence</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card">
         <figure class="sd-card-visual sd-visual-memory">
@@ -193,14 +191,14 @@ nav_order: 2.5
         </figure>
         <div class="sd-card-body">
           <p class="sd-card-meta">Ag/Cu memory filaments · 2019</p>
-          <h3>A pinching law predicts how long a memory survives</h3>
+          <h3>Memory survives until pinchoff, which needs precise prediction</h3>
           <p>
             Conductive filaments in resistive-memory devices were measured over lifetimes from
             microseconds to years. Thin-filament lifetime follows $$\tau\sim d^4$$, the diameter law
             expected when surface diffusion controls the break.
           </p>
           <p class="sd-pinchoff-lens">
-            <strong>Why it matters.</strong> A small change in filament diameter can turn a fleeting
+            <strong>Why is this important? </strong> A small change in filament diameter can turn a fleeting
             electrical state into long-term data retention.
           </p>
         </div>
@@ -218,7 +216,7 @@ nav_order: 2.5
             loading="lazy"
           />
           <figcaption>
-            Silver-wire networks before and after annealing, Chung, Park &amp; Lee (2020), Fig. 1;
+            Silver-wire networks before and after annealing, Chung, Park and Lee (2020), Fig. 1;
             <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cropped from the
             open figure.
           </figcaption>
@@ -232,12 +230,12 @@ nav_order: 2.5
             current.
           </p>
           <p class="sd-pinchoff-lens">
-            <strong>Why it matters.</strong> A local pinchoff becomes device failure when it breaks
+            <strong>Why is this important? </strong> A local pinchoff becomes device failure when it breaks
             the last conducting route across a transparent electrode.
           </p>
         </div>
         <a class="sd-paper-link" href="https://doi.org/10.1016/j.dib.2020.105422"
-          >Chung, Park &amp; Lee, <em>Data in Brief</em> <span aria-hidden="true">&nearr;</span></a
+          >Chung, Park and Lee, <em>Data in Brief</em> <span aria-hidden="true">&nearr;</span></a
         >
       </article>
 
@@ -263,12 +261,12 @@ nav_order: 2.5
             bead-forming instability of an isotropic cylinder.
           </p>
           <p class="sd-pinchoff-lens">
-            <strong>Why it matters.</strong> Understanding pinchoff also suggests how to suppress it:
+            <strong>Why is this important? </strong> Understanding pinchoff also suggests how to suppress it:
             use crystalline anisotropy to preserve a long conducting path.
           </p>
         </div>
         <a class="sd-paper-link" href="https://doi.org/10.1038/s41467-019-13371-3"
-          >Bollani et al., <em>Nature Communications</em> <span aria-hidden="true">&nearr;</span></a
+          >Bollani et al., <em>Nature Communications</em> <span aria-hidden="true"> </span></a
         >
       </article>
     </div>
@@ -280,7 +278,7 @@ nav_order: 2.5
       <p class="sd-section-number">03</p>
       <div>
         <h2 id="sd-model-title">Which model does the cold silver wire follow?</h2>
-        <p>The experimental photograph determines exactly what the calculation can claim.</p>
+        <p>Experimental photographs</p>
       </div>
     </div>
 
@@ -291,7 +289,7 @@ nav_order: 2.5
         loading="lazy"
       />
       <figcaption>
-        The same ultrathin Ag wire at 253, 268, 293, and 363&nbsp;K, Volk et al. (2015), Fig. 1;
+        The same ultrathin Ag wire at 253, 268, 293, and 363 K, Volk et al. (2015), Fig. 1;
         <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>. The projected
         outline of the first frame was used as the input to the paper&rsquo;s contour calculation.
       </figcaption>
@@ -324,8 +322,8 @@ nav_order: 2.5
           $$
         </div>
         <p>
-          A round free cylinder is unstable when $$kR_0&lt;1$$. Its fastest wavelength is
-          $$2\pi\sqrt2R_0=4.44D$$, and the fastest growth rate scales like $$R_0^{-4}$$. That
+          A round free cylinder is unstable when $$kR_0&lt;1.$$ Its fastest wavelength is
+          $$2\pi\sqrt2R_0=4.44D,$$ and the fastest growth rate scales like $$R_0^{-4}.$$ That
           fourth-power clock explains why a wire only a few nanometres across can change rapidly.
         </p>
       </div>
@@ -334,15 +332,15 @@ nav_order: 2.5
     <div class="sd-model-reading">
       <h3>What the picture and model support</h3>
       <p>
-        The wire is solid: it is unchanged at 253&nbsp;K, begins smoothing and necking at
-        268&nbsp;K, and is segmented by 293&nbsp;K. The contour model reproduces several observed
+        The wire is solid: it is unchanged at 253 K, begins smoothing and necking at
+        268 K, and is segmented by 293 K. The contour model reproduces several observed
         break locations, which is good evidence for curvature-driven surface flux.
       </p>
       <p>
         It is not yet the theorem&rsquo;s ideal three-dimensional experiment. TEM records a projection;
-        the wire lies on a 3&nbsp;nm amorphous-carbon film; crystalline anisotropy is suppressed in
+        the wire lies on a 3 nm amorphous-carbon film; crystalline anisotropy is suppressed in
         the calculation; and the diameter is only about twelve lattice spacings. The change near
-        260&nbsp;K is a diameter- and protocol-dependent kinetic onset, not a phase transition.
+        260 K is a diameter- and protocol-dependent kinetic onset, not a phase transition.
       </p>
       <a class="sd-paper-link sd-paper-link-inline" href="https://doi.org/10.1039/C5CP04696C"
         >Volk et al., <em>Physical Chemistry Chemical Physics</em>
@@ -352,44 +350,11 @@ nav_order: 2.5
 
   </section>
 
-  <section class="sd-theorem" aria-labelledby="sd-theorem-title">
-    <div class="sd-theorem-copy">
-      <p class="sd-section-number">04</p>
-      <h2 id="sd-theorem-title">What the new theorem adds</h2>
-      <p>
-        The experiments show that surface diffusion is real and that solid wires pinch. They do not
-        prove that the clean geometric evolution equation develops a singularity on a smooth closed
-        surface. The theorem closes that gap.
-      </p>
-      <ul>
-        <li>a smooth embedded torus remains embedded for every $$t&lt;T$$;</li>
-        <li>one waist reaches zero with $$A(t)\sim\{4\mu(T-t)\}^{1/4}$$;</li>
-        <li>the magnified neck converges to the positive conical profile;</li>
-        <li>the rest of the surface converges smoothly.</li>
-      </ul>
-      <a class="sd-primary-link" href="https://arxiv.org/abs/2608.21882"
-        >Read <em>Pinchoff by surface diffusion</em> <span aria-hidden="true">&rarr;</span></a
-      >
-    </div>
-    <figure class="sd-theorem-figure">
-      <img
-        src="{{ '/assets/img/surface-diffusion/certified-pinchoff-profile.svg' | relative_url }}"
-        alt="Numerically regenerated pinchoff profile approaching its singular double-cone limit"
-        loading="lazy"
-      />
-      <figcaption>
-        Numerical profile from the certified equation: the waist follows the
-        $$(T-t)^{1/4}$$ clock and the limiting cone has half-angle approximately 46.04&deg;.
-      </figcaption>
-    </figure>
-  </section>
-
   <section class="sd-next" aria-labelledby="sd-next-title">
     <p class="sd-section-number">05</p>
     <div class="sd-next-content">
       <div>
-        <p class="sd-eyebrow">An experiment worth trying</p>
-        <h2 id="sd-next-title">One measurement could connect the whole story</h2>
+        <h2 id="sd-next-title">An experiment I'd love to see</h2>
         <p>
           Schnedlitz and co-workers already show what a useful time-resolved pinchoff sequence looks
           like. It would be really interesting to repeat that kind of experiment on a minimally
@@ -398,7 +363,7 @@ nav_order: 2.5
         </p>
         <p class="sd-next-note">
           A single dataset could test whether $$A(t)^4$$ is linear in time, whether rescaled profiles
-          collapse, whether the terminal slope approaches 46.04&deg;, and whether material is conserved
+          collapse, whether the terminal slope approaches 46.04 degrees, and whether material is conserved
           while the outer surface remains smooth.
         </p>
       </div>
@@ -425,8 +390,8 @@ nav_order: 2.5
     </p>
     <p>
       Figures from Wang et al. (2021), Schnedlitz et al. (2017), Wang et al. (2019), Bollani et al.
-      (2019), and Chung, Park &amp; Lee (2020) are used under the Creative Commons licences linked
-      in their captions. Volk et al. (2015) is used under CC BY-NC 3.0. Mullins &amp; Shewmon
+      (2019), and Chung, Park and Lee (2020) are used under the Creative Commons licences linked
+      in their captions. Volk et al. (2015) is used under CC BY-NC 3.0. Mullins and Shewmon
       (1959), Figs. 4 and 5, are reproduced at reduced resolution for scholarly commentary; rights
       remain with the publisher.
     </p>
