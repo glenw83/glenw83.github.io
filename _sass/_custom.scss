@@ -133,37 +133,70 @@ ol.bibliography li::marker {
   font-size: 1.14rem;
 }
 
-.sd-law {
-  border-bottom: 1px solid var(--sd-border);
-  border-top: 1px solid var(--sd-border);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0;
+.sd-source-figure {
+  background: var(--sd-navy);
+  border: 1px solid var(--sd-border);
+  margin: 1.6rem 0;
+  overflow: hidden;
 
-  div {
-    padding: 1.25rem 1rem;
-  }
-
-  div + div {
-    border-left: 1px solid var(--sd-border);
-  }
-
-  strong,
-  span {
+  > img {
+    background: #fff;
     display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  figcaption {
+    color: #a9bbc3;
+    font-size: 0.74rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0.65rem 0.9rem 0.75rem;
+  }
+
+  figcaption a {
+    color: var(--sd-cyan);
+  }
+}
+
+.sd-source-pair {
+  align-items: center;
+  background: #d9e0e3;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+
+  > div {
+    align-self: stretch;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-height: 36rem;
+    object-fit: contain;
+    width: 100%;
   }
 
   span {
-    color: var(--global-text-color-light);
-    font-size: 0.86rem;
-    margin-top: 0.35rem;
+    background: #eef2f3;
+    color: #334751;
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+    padding: 0.55rem 0.7rem;
+    text-transform: uppercase;
   }
 }
 
 .sd-gallery-section,
 .sd-model,
-.sd-history,
-.sd-evidence,
 .sd-theorem,
 .sd-next,
 .sd-sources {
@@ -278,36 +311,6 @@ ol.bibliography li::marker {
   }
 }
 
-.sd-text-visual {
-  align-content: center;
-  aspect-ratio: 16 / 9;
-  background: linear-gradient(145deg, rgba(112, 216, 232, 0.11), transparent 45%), var(--sd-navy);
-  display: grid;
-  gap: 0.55rem;
-  padding: clamp(1.35rem, 4vw, 2.75rem);
-
-  > span {
-    color: var(--sd-cyan);
-    font-size: 0.72rem;
-    font-weight: 750;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-  }
-
-  > strong {
-    color: #f4c76e;
-    font-size: clamp(1.65rem, 4vw, 2.65rem);
-    font-weight: 650;
-    letter-spacing: -0.035em;
-    line-height: 1.05;
-  }
-
-  > small {
-    color: #a9bbc3;
-    font-size: 0.77rem;
-  }
-}
-
 .sd-card-body {
   flex: 1;
   padding: 1.45rem 1.45rem 0.8rem;
@@ -347,6 +350,21 @@ ol.bibliography li::marker {
     float: right;
     font-size: 1rem;
   }
+}
+
+.sd-paper-link-inline {
+  border-top: 0;
+  display: inline-block;
+  padding: 0.25rem 0;
+
+  span {
+    float: none;
+    margin-left: 0.35rem;
+  }
+}
+
+.sd-model-figure {
+  margin-bottom: 1.35rem;
 }
 
 .sd-model-grid {
@@ -399,120 +417,6 @@ ol.bibliography li::marker {
   }
 }
 
-.sd-history-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    align-items: start;
-    border-top: 1px solid var(--sd-border);
-    display: grid;
-    gap: 1.25rem;
-    grid-template-columns: 100px minmax(0, 1fr) auto;
-    margin: 0;
-    padding: 1.25rem 0;
-  }
-
-  li:last-child {
-    border-bottom: 1px solid var(--sd-border);
-  }
-
-  time {
-    color: var(--global-theme-color);
-    font-size: 0.82rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-  }
-
-  strong {
-    font-size: 1.03rem;
-  }
-
-  p {
-    color: var(--global-text-color-light);
-    margin: 0.2rem 0 0;
-  }
-
-  a {
-    font-size: 0.78rem;
-    font-weight: 700;
-    white-space: nowrap;
-  }
-}
-
-.sd-provenance-note {
-  background: var(--sd-navy);
-  border: 1px solid #263b48;
-  margin-top: 1.5rem;
-  padding: clamp(1.25rem, 3vw, 2rem);
-
-  p {
-    color: #c1cdd1;
-  }
-
-  .sd-eyebrow {
-    color: var(--sd-cyan);
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.sd-evidence-chain {
-  counter-reset: none;
-  display: grid;
-  gap: 0;
-  list-style: none;
-  margin: 0 0 2rem;
-  padding: 0;
-
-  li {
-    align-items: start;
-    border-top: 1px solid var(--sd-border);
-    display: grid;
-    gap: 1.25rem;
-    grid-template-columns: 42px minmax(0, 1fr);
-    margin: 0;
-    padding: 1.15rem 0;
-  }
-
-  li:last-child {
-    border-bottom: 1px solid var(--sd-border);
-  }
-
-  li > span {
-    color: var(--global-theme-color);
-    font-size: 0.82rem;
-    font-weight: 800;
-  }
-
-  strong {
-    font-size: 1.04rem;
-  }
-
-  p {
-    color: var(--global-text-color-light);
-    margin: 0.2rem 0 0;
-  }
-}
-
-.sd-caveat {
-  background: var(--sd-muted-bg);
-  border-left: 5px solid var(--global-theme-color);
-  padding: clamp(1.35rem, 3vw, 2.25rem);
-
-  h3 {
-    font-size: 1.45rem;
-    margin: 0 0 0.75rem;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .sd-theorem {
   background: var(--sd-navy);
   border: 1px solid #263b48;
@@ -557,32 +461,23 @@ ol.bibliography li::marker {
   padding-bottom: 0.2rem;
 }
 
-.sd-theorem-mark {
-  align-content: center;
+.sd-theorem-figure {
   border-left: 1px solid #39505d;
-  display: grid;
+  margin: 0;
   padding-left: clamp(1.5rem, 4vw, 3rem);
 
-  > span {
-    color: #a9bec6;
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
+  img {
+    background: #fff;
+    display: block;
+    height: auto;
+    width: 100%;
   }
 
-  strong {
-    color: var(--sd-gold);
-    font-size: clamp(2.4rem, 6vw, 4.8rem);
-    font-weight: 650;
-    letter-spacing: -0.06em;
-    line-height: 1;
-    margin-bottom: 1.4rem;
-  }
-
-  small {
+  figcaption {
     color: #b7c5ca;
+    font-size: 0.75rem;
     line-height: 1.5;
+    margin-top: 0.65rem;
   }
 }
 
@@ -598,29 +493,15 @@ ol.bibliography li::marker {
   }
 }
 
-.sd-next-grid {
+.sd-next-content {
   display: grid;
-  gap: 1px;
+  gap: clamp(1.5rem, 4vw, 3rem);
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 2rem 0;
-  background: var(--sd-border);
-  border: 1px solid var(--sd-border);
+}
 
-  div {
-    background: var(--global-bg-color);
-    padding: 1.15rem;
-  }
-
-  strong,
-  span {
-    display: block;
-  }
-
-  span {
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-    margin-top: 0.25rem;
-  }
+.sd-next-figure {
+  align-self: start;
+  margin: 0;
 }
 
 .sd-next-note {
@@ -653,7 +534,7 @@ ol.bibliography li::marker {
     max-width: 15ch;
   }
 
-  .sd-theorem-mark {
+  .sd-theorem-figure {
     border-left: 0;
     border-top: 1px solid #39505d;
     padding-left: 0;
@@ -673,7 +554,8 @@ ol.bibliography li::marker {
 
   .sd-primer,
   .sd-card-grid,
-  .sd-model-grid {
+  .sd-model-grid,
+  .sd-next-content {
     grid-template-columns: 1fr;
   }
 
@@ -681,13 +563,8 @@ ol.bibliography li::marker {
     grid-column: auto;
   }
 
-  .sd-law {
+  .sd-source-pair {
     grid-template-columns: 1fr;
-  }
-
-  .sd-law div + div {
-    border-left: 0;
-    border-top: 1px solid var(--sd-border);
   }
 }
 
@@ -697,19 +574,10 @@ ol.bibliography li::marker {
     grid-template-columns: 1fr;
   }
 
-  .sd-next-grid {
-    grid-template-columns: 1fr;
-  }
-
   .sd-card-body,
   .sd-paper-link {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
-  }
-
-  .sd-history-list li {
-    gap: 0.55rem;
-    grid-template-columns: 1fr;
   }
 }
 
