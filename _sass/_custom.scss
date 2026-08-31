@@ -1,14 +1,16 @@
 /* Force numbers to show on the publications list */
-ol.bibliography { 
+ol.bibliography {
   list-style: decimal outside !important;
   padding-left: 1.75rem;
 }
-ol.bibliography li { 
+ol.bibliography li {
   display: list-item; /* ensures ::marker is shown even if other display rules apply */
 }
 
 /* Optional: show bracketed numbers like [12] */
-ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
+ol.bibliography li::marker {
+  content: "[" counter(list-item) "] ";
+}
 
 /* Surface-diffusion experimental gallery */
 .sd-gallery-page {
@@ -59,10 +61,14 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   border: 1px solid #263b48;
   display: grid;
   gap: 2.25rem;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  grid-template-columns: 1fr;
   margin: 0 0 5rem;
   overflow: hidden;
   padding: clamp(1.5rem, 4vw, 3.5rem);
+
+  .sd-hero-copy {
+    max-width: 58rem;
+  }
 
   .sd-hero-copy p,
   .sd-hero-copy h2,
@@ -78,7 +84,7 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   .sd-hero-copy h2 {
     font-size: clamp(2.15rem, 5vw, 4rem);
     margin: 0 0 1.35rem;
-    max-width: 11ch;
+    max-width: 17ch;
   }
 
   .sd-deck {
@@ -95,17 +101,10 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   align-self: center;
   margin: 0;
 
-  svg {
+  img {
     display: block;
     height: auto;
     width: 100%;
-  }
-
-  svg text {
-    fill: #edf5f7;
-    font-family: inherit;
-    font-size: 15px;
-    letter-spacing: 0.03em;
   }
 
   figcaption {
@@ -162,6 +161,8 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
 }
 
 .sd-gallery-section,
+.sd-model,
+.sd-history,
 .sd-evidence,
 .sd-theorem,
 .sd-next,
@@ -228,6 +229,10 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   }
 }
 
+.sd-card-wide {
+  grid-column: 1 / -1;
+}
+
 .sd-card-visual {
   background: var(--sd-navy);
   border-bottom: 1px solid var(--sd-border);
@@ -241,12 +246,10 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   }
 
   .sd-open-figure {
-    aspect-ratio: 16 / 9;
     background: #fff;
     display: block;
     height: auto;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
     width: 100%;
   }
 
@@ -272,6 +275,36 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
 
   figcaption a {
     color: var(--sd-cyan);
+  }
+}
+
+.sd-text-visual {
+  align-content: center;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(145deg, rgba(112, 216, 232, 0.11), transparent 45%), var(--sd-navy);
+  display: grid;
+  gap: 0.55rem;
+  padding: clamp(1.35rem, 4vw, 2.75rem);
+
+  > span {
+    color: var(--sd-cyan);
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  > strong {
+    color: #f4c76e;
+    font-size: clamp(1.65rem, 4vw, 2.65rem);
+    font-weight: 650;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+  }
+
+  > small {
+    color: #a9bbc3;
+    font-size: 0.77rem;
   }
 }
 
@@ -313,6 +346,117 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
     color: inherit;
     float: right;
     font-size: 1rem;
+  }
+}
+
+.sd-model-grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sd-equation-card {
+  background: var(--sd-navy);
+  border: 1px solid #263b48;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+
+  p,
+  strong {
+    color: #eef4f5;
+  }
+
+  .sd-eyebrow {
+    color: var(--sd-cyan);
+  }
+
+  p:last-child {
+    color: #bdcbd0;
+    font-size: 0.92rem;
+    margin-bottom: 0;
+  }
+}
+
+.sd-equation {
+  color: #f4c76e;
+  font-size: clamp(0.9rem, 2vw, 1.12rem);
+  margin: 1.25rem 0;
+  overflow-x: auto;
+}
+
+.sd-model-reading {
+  background: var(--sd-muted-bg);
+  border-left: 5px solid var(--sd-gold);
+  margin-top: 1.35rem;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+
+  h3 {
+    font-size: 1.55rem;
+    margin: 0 0 0.8rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sd-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    align-items: start;
+    border-top: 1px solid var(--sd-border);
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 100px minmax(0, 1fr) auto;
+    margin: 0;
+    padding: 1.25rem 0;
+  }
+
+  li:last-child {
+    border-bottom: 1px solid var(--sd-border);
+  }
+
+  time {
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  strong {
+    font-size: 1.03rem;
+  }
+
+  p {
+    color: var(--global-text-color-light);
+    margin: 0.2rem 0 0;
+  }
+
+  a {
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+.sd-provenance-note {
+  background: var(--sd-navy);
+  border: 1px solid #263b48;
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+
+  p {
+    color: #c1cdd1;
+  }
+
+  .sd-eyebrow {
+    color: var(--sd-cyan);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -501,7 +645,6 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
 }
 
 @media (max-width: 900px) {
-  .sd-hero,
   .sd-theorem {
     grid-template-columns: 1fr;
   }
@@ -529,8 +672,13 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   }
 
   .sd-primer,
-  .sd-card-grid {
+  .sd-card-grid,
+  .sd-model-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sd-card-wide {
+    grid-column: auto;
   }
 
   .sd-law {
@@ -557,6 +705,11 @@ ol.bibliography li::marker { content: "[" counter(list-item) "] "; }
   .sd-paper-link {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
+  }
+
+  .sd-history-list li {
+    gap: 0.55rem;
+    grid-template-columns: 1fr;
   }
 }
 
