@@ -1,7 +1,7 @@
 ---
 layout: page
-title: surface diffusion in the lab
-description: Historical observations of motion by surface diffusion.
+title: surface diffusion and related phenomena in the lab
+description: Historical observations of motion by surface diffusion, and related phenomena.
 permalink: /surface-diffusion-experiments/
 nav: true
 nav_order: 2.5
