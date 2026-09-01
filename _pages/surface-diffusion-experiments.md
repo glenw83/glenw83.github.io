@@ -117,7 +117,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-021-25542-2"
             >Wang et al. (2021), <em>Nature Communications</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual sd-visual-atomic">
@@ -152,7 +152,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1016/j.commatsci.2007.07.034"
             >B&ouml;hme and M&uuml;ller (2008), <em>Computational Materials Science</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual">
@@ -211,7 +211,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1039/C7CP00463J"
             >Schnedlitz et al. (2017), <em>Physical Chemistry Chemical Physics</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual sd-visual-gold">
@@ -243,12 +243,12 @@ nav_order: 2.5
           <h3>Memory survives until pinchoff, which needs precise prediction</h3>
           <p>
             Conductive filaments in resistive-memory devices were measured over lifetimes from
-            microseconds to years. Thin-filament lifetime follows $$\tau\sim d^4$$, the diameter law
+            microseconds to years. Thin-filament lifetime follows $$\tau\sim d^4,$$ the diameter law
             expected when surface diffusion controls the break.
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-018-07979-0"
             >Wang et al. (2019), <em>Nature Communications</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual sd-visual-memory">
@@ -281,7 +281,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1016/j.dib.2020.105422"
             >Chung, Park and Lee (2020), <em>Data in Brief</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual sd-visual-sinter">
@@ -314,7 +314,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-019-13371-3"
             >Bollani et al. (2019), <em>Nature Communications</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual sd-visual-silicon-wire">
@@ -372,7 +372,7 @@ nav_order: 2.5
         </div>
         <p>
           Volk and co-workers traced the TEM silhouette and evolved it as a
-          <strong>two-dimensional, constant-thickness contour</strong>. They set $$B=1$$, so the
+          <strong>two-dimensional, constant-thickness contour</strong>. They set $$B=1,$$ so the
           calculation predicts the order and location of breaks, not the physical breakup time.
         </p>
       </div>
@@ -409,7 +409,7 @@ nav_order: 2.5
       </p>
       <a class="sd-paper-link sd-paper-link-inline" href="https://doi.org/10.1039/C5CP04696C"
         >Volk et al., <em>Physical Chemistry Chemical Physics</em>
-        <span aria-hidden="true">&nearr;</span></a
+        <span aria-hidden="true"></span></a
       >
     </div>
 
