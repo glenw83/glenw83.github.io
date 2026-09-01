@@ -7,6 +7,8 @@ nav: true
 nav_order: 2.5
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/surface-diffusion-gallery.css' | relative_url }}" />
+
 <div class="sd-gallery-page">
   <section class="sd-hero" aria-labelledby="sd-hero-title">
     <div class="sd-hero-copy">
@@ -105,6 +107,19 @@ nav_order: 2.5
     <h3 class="sd-chapter"><span>Atoms diffuse</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card sd-card-wide">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Silver nanowire · room temperature · 2021</p>
+          <h3>Surface steps walk across a crystalline solid</h3>
+          <p>
+            The atomic lattice remains visible while surface steps migrate along a 6.6 nm silver
+            wire under tension. When two steps overlap, a partial dislocation nucleates. The image
+            makes the microscopic carrier of surface diffusion visible rather than merely inferred.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-021-25542-2"
+            >Wang et al. (2021), <em>Nature Communications</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual sd-visual-atomic">
           <img
             class="sd-open-figure"
@@ -117,30 +132,31 @@ nav_order: 2.5
             Fig. 2; <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Silver nanowire · room temperature · 2021</p>
-          <h3>Surface steps walk across a crystalline solid</h3>
-          <p>
-            The atomic lattice remains visible while surface steps migrate along a 6.6 nm silver
-            wire under tension. When two steps overlap, a partial dislocation nucleates. The image
-            makes the microscopic carrier of surface diffusion visible rather than merely inferred.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> Because surface motion can change the mechanical strength of a
-            nanoscale component even when the component remains solid.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1038/s41467-021-25542-2"
-          >Wang et al., <em>Nature Communications</em> <span aria-hidden="true"> </span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> Because surface motion can change the mechanical strength of a
+          nanoscale component even when the component remains solid.
+        </p>
       </article>
     </div>
 
     <h3 class="sd-chapter"><span>Phase interfaces coarsen</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card sd-card-wide">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Ag&ndash;Cu binary alloy · 700 °C · 2008</p>
+          <h3>A binary alloy separates isothermally and coarsens</h3>
+          <p>
+            At a fixed temperature, the fine silver-rich and copper-rich pattern reorganises. Thin
+            regions disappear and the typical size of the remaining regions grows between 2 and 40
+            hours.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1016/j.commatsci.2007.07.034"
+            >B&ouml;hme and M&uuml;ller (2008), <em>Computational Materials Science</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual">
-          <div class="sd-source-pair">
+          <div class="sd-alloy-sequence">
             <div>
               <img
                 src="{{ '/assets/img/surface-diffusion/boehme-muller-agcu-2h.jpg' | relative_url }}"
@@ -148,6 +164,8 @@ nav_order: 2.5
                 loading="lazy"
               />
               <span>2 hours</span>
+            </div>
+            <div>
               <img
                 src="{{ '/assets/img/surface-diffusion/boehme-muller-agcu-5h.jpg' | relative_url }}"
                 alt="Microstructure of the same silver-copper binary alloy after five hours at 700 degrees Celsius"
@@ -170,32 +188,32 @@ nav_order: 2.5
             Images courtesy of B&ouml;hme and M&uuml;ller.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Ag&ndash;Cu binary alloy · 700 °C · 2008</p>
-          <h3>A binary alloy separates isothermally and coarsens</h3>
-          <p>
-            At a fixed temperature, the fine silver-rich and copper-rich pattern reorganises. Thin
-            regions disappear and the typical size of the remaining regions grows between 2 and 40
-            hours.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> Because coarsening changes the strength and
-            lifetime of solder joints. Here the measured $$t^{1/3}$$ growth points to
-            bulk-diffusion-driven Ostwald ripening, not surface diffusion. With interface-localised
-            mobility, however, the sharp-interface limit of the Cahn&ndash;Hilliard model is surface
-            diffusion.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1016/j.commatsci.2007.07.034"
-          >B&ouml;hme and M&uuml;ller, <em>Computational Materials Science</em>
-          <span aria-hidden="true"> </span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> Because coarsening changes the strength and
+          lifetime of solder joints. Here the measured $$t^{1/3}$$ growth points to
+          bulk-diffusion-driven Ostwald ripening, not surface diffusion. With interface-localised
+          mobility, however, the sharp-interface limit of the Cahn&ndash;Hilliard model is surface
+          diffusion.
+        </p>
       </article>
     </div>
 
     <h3 class="sd-chapter"><span>Watch a neck fail</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card sd-card-wide">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Gold nanowire · 150 °C · 2017</p>
+          <h3>A solid neck thins, separates, and rounds into particles</h3>
+          <p>
+            The lower row follows a gold wire in the TEM for nearly half an hour. The upper row is a
+            three-dimensional atom-hopping calculation. Both show material leaving the constricted
+            regions and accumulating in the thicker parts until the wire separates.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1039/C7CP00463J"
+            >Schnedlitz et al. (2017), <em>Physical Chemistry Chemical Physics</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual sd-visual-gold">
           <img
             class="sd-open-figure"
@@ -209,30 +227,30 @@ nav_order: 2.5
             <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Gold nanowire · 150 °C · 2017</p>
-          <h3>A solid neck thins, separates, and rounds into particles</h3>
-          <p>
-            The lower row follows a gold wire in the TEM for nearly half an hour. The upper row is a
-            three-dimensional atom-hopping calculation. Both show material leaving the constricted
-            regions and accumulating in the thicker parts until the wire separates.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> The experiment records the topology change, while the
-            model tests whether thermally activated surface motion can reproduce its timing and
-            location.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1039/C7CP00463J"
-          >Schnedlitz et al., <em>Physical Chemistry Chemical Physics</em>
-          <span aria-hidden="true"> </span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> The experiment records the topology change, while the
+          model tests whether thermally activated surface motion can reproduce its timing and
+          location.
+        </p>
       </article>
     </div>
 
     <h3 class="sd-chapter"><span>An engineering consequence</span></h3>
     <div class="sd-card-grid">
       <article class="sd-card">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Ag/Cu memory filaments · 2019</p>
+          <h3>Memory survives until pinchoff, which needs precise prediction</h3>
+          <p>
+            Conductive filaments in resistive-memory devices were measured over lifetimes from
+            microseconds to years. Thin-filament lifetime follows $$\tau\sim d^4$$, the diameter law
+            expected when surface diffusion controls the break.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-018-07979-0"
+            >Wang et al. (2019), <em>Nature Communications</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual sd-visual-memory">
           <img
             class="sd-open-figure"
@@ -246,25 +264,26 @@ nav_order: 2.5
             open figure.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Ag/Cu memory filaments · 2019</p>
-          <h3>Memory survives until pinchoff, which needs precise prediction</h3>
-          <p>
-            Conductive filaments in resistive-memory devices were measured over lifetimes from
-            microseconds to years. Thin-filament lifetime follows $$\tau\sim d^4$$, the diameter law
-            expected when surface diffusion controls the break.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> A small change in filament diameter can turn a fleeting
-            electrical state into long-term data retention.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1038/s41467-018-07979-0"
-          >Wang et al., <em>Nature Communications</em> <span aria-hidden="true">&nearr;</span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> A small change in filament diameter can turn a fleeting
+          electrical state into long-term data retention.
+        </p>
       </article>
 
       <article class="sd-card">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Transparent silver electrodes · 2020</p>
+          <h3>A conducting network fails wire by wire</h3>
+          <p>
+            After annealing, continuous silver wires become isolated rods and beads. Thicker wires
+            survive to higher temperatures; thinner wires lose the connected paths that carry
+            current.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1016/j.dib.2020.105422"
+            >Chung, Park and Lee (2020), <em>Data in Brief</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual sd-visual-sinter">
           <img
             class="sd-open-figure"
@@ -278,25 +297,26 @@ nav_order: 2.5
             open figure.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Transparent silver electrodes · 2020</p>
-          <h3>A conducting network fails wire by wire</h3>
-          <p>
-            After annealing, continuous silver wires become isolated rods and beads. Thicker wires
-            survive to higher temperatures; thinner wires lose the connected paths that carry
-            current.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> A local pinchoff becomes device failure when it breaks
-            the last conducting route across a transparent electrode.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1016/j.dib.2020.105422"
-          >Chung, Park and Lee, <em>Data in Brief</em> <span aria-hidden="true">&nearr;</span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> A local pinchoff becomes device failure when it breaks
+          the last conducting route across a transparent electrode.
+        </p>
       </article>
 
       <article class="sd-card sd-card-wide">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Single-crystal silicon · 2019</p>
+          <h3>Crystal structure can be used to prevent breakup</h3>
+          <p>
+            Templated dewetting turns patterned silicon films into connected, sub-millimetre-long
+            crystalline wires. Facet-dependent surface energies steer the evolution away from the
+            bead-forming instability of an isotropic cylinder.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1038/s41467-019-13371-3"
+            >Bollani et al. (2019), <em>Nature Communications</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
         <figure class="sd-card-visual sd-visual-silicon-wire">
           <img
             class="sd-open-figure"
@@ -309,22 +329,10 @@ nav_order: 2.5
             <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
           </figcaption>
         </figure>
-        <div class="sd-card-body">
-          <p class="sd-card-meta">Single-crystal silicon · 2019</p>
-          <h3>Crystal structure can be used to prevent breakup</h3>
-          <p>
-            Templated dewetting turns patterned silicon films into connected, sub-millimetre-long
-            crystalline wires. Facet-dependent surface energies steer the evolution away from the
-            bead-forming instability of an isotropic cylinder.
-          </p>
-          <p class="sd-pinchoff-lens">
-            <strong>Why is this important? </strong> Understanding pinchoff also suggests how to suppress it:
-            use crystalline anisotropy to preserve a long conducting path.
-          </p>
-        </div>
-        <a class="sd-paper-link" href="https://doi.org/10.1038/s41467-019-13371-3"
-          >Bollani et al., <em>Nature Communications</em> <span aria-hidden="true"> </span></a
-        >
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> Understanding pinchoff also suggests how to suppress it:
+          use crystalline anisotropy to preserve a long conducting path.
+        </p>
       </article>
     </div>
 
@@ -450,7 +458,7 @@ nav_order: 2.5
     </div>
   </section>
 
-  <section class="sd-next" aria-labelledby="sd-next-title">
+  <section class="sd-next sd-next-text-only" aria-labelledby="sd-next-title">
     <p class="sd-section-number">05</p>
     <div class="sd-next-content">
       <div>
@@ -467,17 +475,6 @@ nav_order: 2.5
           while the outer surface remains smooth.
         </p>
       </div>
-      <figure class="sd-source-figure sd-next-figure">
-        <img
-          src="{{ '/assets/img/surface-diffusion/schnedlitz-gold-wire-2017-fig5.png' | relative_url }}"
-          alt="Time-resolved experimental and simulated gold nanowire pinchoff sequence"
-          loading="lazy"
-        />
-        <figcaption>
-          The closest existing template: calculation above and time-resolved TEM below. Schnedlitz
-          et al. (2017), Fig. 5; <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-        </figcaption>
-      </figure>
     </div>
   </section>
 

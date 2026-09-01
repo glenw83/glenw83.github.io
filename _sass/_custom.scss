@@ -178,7 +178,7 @@ ol.bibliography li::marker {
     display: block;
     height: auto;
     margin: auto;
-    max-height: 36rem;
+    max-height: 22rem;
     object-fit: contain;
     width: 100%;
   }
@@ -243,33 +243,39 @@ ol.bibliography li::marker {
 .sd-card-grid {
   display: grid;
   gap: 1.35rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .sd-card {
   background: var(--global-card-bg-color);
   border: 1px solid var(--sd-border);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "body visual"
+    "importance importance";
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.1fr);
   min-width: 0;
-  transition:
-    border-color 160ms ease,
-    transform 160ms ease;
+  overflow: hidden;
+  transition: border-color 160ms ease;
 
   &:hover {
     border-color: color-mix(in srgb, var(--global-theme-color) 60%, var(--sd-border));
-    transform: translateY(-2px);
   }
 }
 
 .sd-card-wide {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .sd-card-visual {
   background: var(--sd-navy);
-  border-bottom: 1px solid var(--sd-border);
+  border-left: 1px solid var(--sd-border);
+  display: flex;
+  flex-direction: column;
+  grid-area: visual;
+  justify-content: center;
   margin: 0;
+  min-width: 0;
 
   svg {
     aspect-ratio: 16 / 9;
@@ -282,8 +288,11 @@ ol.bibliography li::marker {
     background: #fff;
     display: block;
     height: auto;
+    margin-inline: auto;
+    max-height: 22rem;
+    max-width: 100%;
     object-fit: contain;
-    width: 100%;
+    width: auto;
   }
 
   svg text {
@@ -312,7 +321,7 @@ ol.bibliography li::marker {
 }
 
 .sd-card-body {
-  flex: 1;
+  grid-area: body;
   padding: 1.45rem 1.45rem 0.8rem;
 
   h3 {
@@ -331,11 +340,60 @@ ol.bibliography li::marker {
   }
 }
 
+.sd-card-citation {
+  display: inline-flex;
+  font-size: 0.84rem;
+  font-weight: 650;
+  gap: 0.45rem;
+  line-height: 1.45;
+  margin-top: 0.25rem;
+
+  span {
+    flex: 0 0 auto;
+  }
+}
+
 .sd-pinchoff-lens {
+  background: var(--sd-muted-bg);
   border-left: 3px solid var(--sd-gold);
+  border-top: 1px solid var(--sd-border);
   color: var(--global-text-color-light);
-  margin-top: 1.2rem;
-  padding-left: 0.85rem;
+  grid-area: importance;
+  margin: 0;
+  padding: 0.95rem 1.45rem 1rem;
+}
+
+.sd-alloy-sequence {
+  background: #d9e0e3;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  > div {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  img {
+    display: block;
+    height: 100%;
+    max-height: 18rem;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  span {
+    background: #eef2f3;
+    color: #334751;
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    padding: 0.45rem 0.6rem;
+    text-transform: uppercase;
+  }
 }
 
 .sd-paper-link {
@@ -364,7 +422,13 @@ ol.bibliography li::marker {
 }
 
 .sd-model-figure {
-  margin-bottom: 1.35rem;
+  margin: 0 auto 1.35rem;
+  max-width: 48rem;
+
+  > img {
+    max-height: 24rem;
+    object-fit: contain;
+  }
 }
 
 .sd-model-grid {
@@ -502,6 +566,16 @@ ol.bibliography li::marker {
 .sd-next-figure {
   align-self: start;
   margin: 0;
+
+  > img {
+    max-height: 22rem;
+    object-fit: contain;
+  }
+}
+
+.sd-next-text-only .sd-next-content {
+  grid-template-columns: 1fr;
+  max-width: 58rem;
 }
 
 .sd-next-note {
@@ -557,6 +631,23 @@ ol.bibliography li::marker {
   .sd-model-grid,
   .sd-next-content {
     grid-template-columns: 1fr;
+  }
+
+  .sd-card {
+    grid-template-areas:
+      "body"
+      "visual"
+      "importance";
+    grid-template-columns: 1fr;
+  }
+
+  .sd-card-visual {
+    border-left: 0;
+    border-top: 1px solid var(--sd-border);
+  }
+
+  .sd-card-visual .sd-open-figure {
+    max-height: 18rem;
   }
 
   .sd-card-wide {
