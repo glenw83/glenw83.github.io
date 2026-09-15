@@ -20,17 +20,19 @@ social: true # includes social icons at the bottom of the page
 
 I am an ARC Future Fellow and Associate Head (Mathematics and Statistics) in the School of Mathematics and Physics at the University of Wollongong. My research lies at the interface of geometry and analysis. I study geometric evolution equations, particularly fourth- and higher-order curvature flows, with an emphasis on singularity formation, self-similar solutions, stability, and long-time behaviour. I also work on nonlinear partial differential equations, variational problems for curves, and Riemannian geometry.
 
-> **New — 28 August 2026.** My paper [*Pinchoff by surface diffusion*](https://arxiv.org/abs/2608.21882) constructs smooth closed embedded tori that develop a one-point pinchoff in finite time under surface diffusion flow while remaining embedded before the singular time. To the best of my knowledge, it gives the first rigorous example of finite-time singularity formation for surface diffusion flow and the first rigorous construction of the classical positive conical shrinking profile that governs the singularity. The waist radius is asymptotic to a constant multiple of $(T-t)^{1/4}$, and rescaling by this radius gives smooth local convergence to the profile. Explore the [experimental gallery](https://glenw83.github.io/surface-diffusion-experiments/) to see how the same mechanism appears in thermal grooves, breaking nanowires, and nanoscale devices, or [read the full paper on arXiv](https://arxiv.org/abs/2608.21882). The accompanying computer-assisted estimates can be reproduced from the [numerical certificate archive](https://glenw83.github.io/conical_pincher_certificate.zip).
+> **New — 28 August 2026.** My paper [_Pinchoff by surface diffusion_](https://arxiv.org/abs/2608.21882) constructs smooth closed embedded tori that develop a one-point pinchoff in finite time under surface diffusion flow while remaining embedded before the singular time. To the best of my knowledge, it gives the first rigorous example of finite-time singularity formation for surface diffusion flow and the first rigorous construction of the classical positive conical shrinking profile that governs the singularity. The waist radius is asymptotic to a constant multiple of $(T-t)^{1/4}$, and rescaling by this radius gives smooth local convergence to the profile. Explore the [experimental gallery](https://glenw83.github.io/surface-diffusion-experiments/) to see how the same mechanism appears in thermal grooves, breaking nanowires, and nanoscale devices, or [read the full paper on arXiv](https://arxiv.org/abs/2608.21882). The accompanying computer-assisted estimates can be reproduced from the [numerical certificate archive](https://glenw83.github.io/conical_pincher_certificate.zip).
+
+My latest preprints are [_The Cartan–Hadamard isoperimetric inequality under controlled variation of curvature_](https://arxiv.org/abs/2609.14505) and [_Rigidity and stability for the Bogovskii constant_](https://arxiv.org/abs/2609.13763).
 
 Three further recent preprints develop [concentration–compactness for the geometric polyharmonic heat flow](https://arxiv.org/abs/2608.20950), prove the existence of [infinitely many lemniscate- and butterfly-type closed critical points, and non-closed circular waves, for the length-penalised ideal energy](https://arxiv.org/abs/2608.22396), and classify [minimal linear equators in Berger projective spaces](https://arxiv.org/abs/2607.24001), including exact mod-two homological systoles in the purely stretched and squashed regimes.
 
-My paper [*A simply connected nilpotent Lie group with a closed geodesic*](https://arxiv.org/abs/2607.04678), accepted for publication in the *Proceedings of the American Mathematical Society*, answers a question of Christoph Böhm and Ramiro Lafuente in the affirmative. Other papers posted in 2026 concern the [generalised ideal flow of closed planar curves](https://arxiv.org/abs/2605.09379), [scale-critical curve diffusion flows](https://arxiv.org/abs/2604.01716), [Heintze–Karcher and reverse Alexandrov–Fenchel inequalities via focal geometry](https://arxiv.org/abs/2603.23946), the [homogeneous Sobolev gradient flow of the length functional](https://arxiv.org/abs/2603.18504), [stabilisation in a model of Langmuir–Blodgett films](https://arxiv.org/abs/2603.16787), and the existence of elastic [“jellyfish” curves](https://arxiv.org/abs/2601.21227).
+My paper [_A simply connected nilpotent Lie group with a closed geodesic_](https://arxiv.org/abs/2607.04678), accepted for publication in the _Proceedings of the American Mathematical Society_, answers a question of Christoph Böhm and Ramiro Lafuente in the affirmative. Other papers posted in 2026 concern the [generalised ideal flow of closed planar curves](https://arxiv.org/abs/2605.09379), [scale-critical curve diffusion flows](https://arxiv.org/abs/2604.01716), [Heintze–Karcher and reverse Alexandrov–Fenchel inequalities via focal geometry](https://arxiv.org/abs/2603.23946), the [homogeneous Sobolev gradient flow of the length functional](https://arxiv.org/abs/2603.18504), [stabilisation in a model of Langmuir–Blodgett films](https://arxiv.org/abs/2603.16787), and the existence of elastic [“jellyfish” curves](https://arxiv.org/abs/2601.21227).
 
 My PhD concerned fourth-order geometric evolution equations. I subsequently held an Alexander von Humboldt Research Fellowship at Otto von Guericke University Magdeburg with Professor Hans-Christoph Grunau, where I continued my work on the dynamics of higher-order geometric flows.
 
-I hold an [ARC Future Fellowship (2026–2030)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880) (FT250100880) for the project *New directions in geometric flows*. The fellowship develops new approaches to the Cartan–Hadamard conjecture and to a problem of Yau concerning the equivalence of plane curves.
+I hold an [ARC Future Fellowship (2026–2030)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/FT250100880) (FT250100880) for the project _New directions in geometric flows_. The fellowship develops new approaches to the Cartan–Hadamard conjecture and to a problem of Yau concerning the equivalence of plane curves.
 
-I am also a Chief Investigator on the [ARC Discovery Project *Non-local PDE approach to moving fronts and bushfires* (2025–2027)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080) (DP250101080). This project has produced a new bushfire model, an existence-and-uniqueness theory for the model, work on self-sustaining travelling fronts, and an analysis of proactive and reactive prescribed-burning policies.
+I am also a Chief Investigator on the [ARC Discovery Project _Non-local PDE approach to moving fronts and bushfires_ (2025–2027)](https://dataportal.arc.gov.au/NCGP/Web/Grant/Grant/DP250101080) (DP250101080). This project has produced a new bushfire model, an existence-and-uniqueness theory for the model, work on self-sustaining travelling fronts, and an analysis of proactive and reactive prescribed-burning policies.
 
 Previously, I was a Chief Investigator on an [ARC Discovery Project in geometric flows (2015–2018)](https://researchdata.edu.au/discovery-projects-grant-id-dp150100375/617672) (DP150100375). That project supported work on curve and surface diffusion, elastic and Willmore flows, fully nonlinear second-order flows with non-smooth speeds, and polyharmonic flows, and established several continuing collaborations.
 
@@ -41,42 +43,55 @@ My research and teaching have been recognised with the biennial [Peter Schwerdtf
 My publications are grouped below by research area.
 
 #### 1. Curve and surface diffusion
+
 {% bibliography --query @*[topic=curve_surface_diffusion] %}
 
 #### 2. Families of fourth-order flows
+
 {% bibliography --query @*[topic=families_of_fourth_order_flows] %}
 
 #### 3. Arbitrary-order curvature flows
+
 {% bibliography --query @*[topic=arbitrary_order_flows] %}
 
 #### 4. Elastic, Willmore, and Helfrich flows
+
 {% bibliography --query @*[topic=elastic_willmore_helfrich] %}
 
 #### 5. Fire, thin films, wound healing, and biomembranes
+
 {% bibliography --query @*[topic=fire_thin_films_wound_healing_biomembranes] %}
 
 #### 6. Riemannian geometry and geometric inequalities
+
 {% bibliography --query @*[topic=riemannian_geometry_and_geometric_inequalities] %}
 
 #### 7. Chen's conjecture and flow
+
 {% bibliography --query @*[topic=chens_conjecture_and_flow] %}
 
 #### 8. Polyharmonic and higher-order problems
+
 {% bibliography --query @*[topic=polyharmonic_and_higher_order_problems] %}
 
 #### 9. Second-order flows
+
 {% bibliography --query @*[topic=second_order_flows] %}
 
 #### 10. Ideal energy: critical points and its flow
+
 {% bibliography --query @*[topic=ideal_flow] %}
 
 #### 11. Entropy flow
+
 {% bibliography --query @*[topic=entropy_flow] %}
 
 #### 12. Sobolev gradient flows
+
 {% bibliography --query @*[topic=sobolev_gradient_flows] %}
 
 #### 13. Invariant flows in fundamental geometries
+
 {% bibliography --query @*[topic=invariant_flows_in_fundamental_geometries] %}
 
 Links to my ORCID record, Google Scholar profile, and other external pages are in the header and footer. The best way to contact me is by email.
@@ -100,7 +115,7 @@ Links to my ORCID record, Google Scholar profile, and other external pages are i
 
 ### Editorial work and governance
 
-**Editorial work.** I serve on the editorial boards of the [*Journal of Evolution Equations*](https://link.springer.com/journal/28), the [*Bulletin of the Australian Mathematical Society*](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society), and [*Transactions in Pure and Applied Mathematics*](https://bscipub.com/tpam). I have also served as a guest editor for the [MATRIX Annals](https://www.matrix-inst.org.au/book-series/) for special issues associated with programs I have organised at MATRIX.
+**Editorial work.** I serve on the editorial boards of the [_Journal of Evolution Equations_](https://link.springer.com/journal/28), the [_Bulletin of the Australian Mathematical Society_](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society), and [_Transactions in Pure and Applied Mathematics_](https://bscipub.com/tpam). I have also served as a guest editor for the [MATRIX Annals](https://www.matrix-inst.org.au/book-series/) for special issues associated with programs I have organised at MATRIX.
 
 **Governance.** I am Associate Head (Mathematics and Statistics) in the University of Wollongong's School of Mathematics and Physics. I serve as the New South Wales representative on the national committee of the Australian Association of von Humboldt Fellows for 2025–2026, and as an ordinary member of the Council of the Australian Mathematical Society to the 2028 AGM. I chaired the School Education Committee in 2016–2021 and 2024–2025, leading curriculum reform and quality-assurance work, and have also served in roles including Academic Integrity Officer and Academic Program Director.
 
