@@ -1,7 +1,7 @@
 ---
 layout: page
 title: surface diffusion and related phenomena in the lab
-description: Historical observations of motion by surface diffusion, and related phenomena.
+description: Experimental observations of surface diffusion, bulk diffusion, and related capillarity-driven motion.
 permalink: /surface-diffusion-experiments/
 nav: true
 nav_order: 2.5
@@ -34,7 +34,7 @@ nav_order: 2.5
       />
       <figcaption>
         Numerical rendering of meridians $$r=A\,U(z/A)$$ from the certified profile equation. The
-        last panel is the singular-time double cone $$r=\alpha|z|$$. 
+        last panel is the singular-time double cone $$r=\alpha|z|$$.
       </figcaption>
     </figure>
 
@@ -231,6 +231,40 @@ nav_order: 2.5
           <strong>Why is this important? </strong> The experiment records the topology change, while the
           model tests whether thermally activated surface motion can reproduce its timing and
           location.
+        </p>
+      </article>
+
+      <article class="sd-card sd-card-wide">
+        <div class="sd-card-body">
+          <p class="sd-card-meta">Al&ndash;Cu liquid rod · 565 °C · 2010</p>
+          <h3>Bulk diffusion has its own universal pinchoff</h3>
+          <p>
+            Time-resolved synchrotron tomography follows a liquid rod through the last 27.5 minutes
+            before separation. Copper is transported through the high-diffusivity liquid phase,
+            rather than along the interface, yet the neck still approaches a conical pinch.
+          </p>
+          <a class="sd-card-citation" href="https://doi.org/10.1038/nphys1737"
+            >Aagesen et al. (2010), <em>Nature Physics</em>
+            <span aria-hidden="true">&nearr;</span></a
+          >
+        </div>
+        <figure class="sd-card-visual">
+          <img
+            class="sd-open-figure"
+            src="{{ '/assets/img/surface-diffusion/aagesen-voorhees-bulk-diffusion-pinchoff-2010-fig1.png' | relative_url }}"
+            alt="Four time-resolved tomographic reconstructions of a liquid aluminium-copper rod narrowing and separating under bulk diffusion"
+            loading="lazy"
+          />
+          <figcaption>
+            Liquid-rod pinchoff at 142.5, 155, 165 and 170 minutes, Aagesen et al. (2010),
+            Fig. 1. Image supplied by Peter W. Voorhees; rights remain with the publisher.
+          </figcaption>
+        </figure>
+        <p class="sd-pinchoff-lens">
+          <strong>Why is this important? </strong> The same visible event can come from a different
+          kinetic law. Here the similarity length scales as $$(T-t)^{1/3}$$, whereas for surface
+          diffusion it scales as $$(T-t)^{1/4}$$. The shape alone does not identify the transport
+          mechanism.
         </p>
       </article>
     </div>
@@ -496,6 +530,11 @@ nav_order: 2.5
       The Ag&ndash;Cu micrographs from B&ouml;hme and M&uuml;ller (2008), Fig. 5, and the kinetic
       comparison from Carter, Roosen, Cahn and Taylor (1995), Fig. 5, are reproduced at reduced
       resolution for scholarly commentary; rights remain with the publishers.
+    </p>
+    <p>
+      The liquid-rod time sequence from Aagesen et al. (2010), Fig. 1, was supplied by Peter W.
+      Voorhees and is reproduced at reduced resolution for scholarly comparison; rights remain with
+      Macmillan Publishers Limited.
     </p>
   </section>
 </div>
