@@ -245,7 +245,7 @@ nav_order: 2.5
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1038/nphys1737"
             >Aagesen et al. (2010), <em>Nature Physics</em>
-            <span aria-hidden="true">&nearr;</span></a
+            <span aria-hidden="true"></span></a
           >
         </div>
         <figure class="sd-card-visual">
