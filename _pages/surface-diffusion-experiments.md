@@ -274,14 +274,42 @@ nav_order: 2.5
 
     <article class="sd-card sd-curvature-card" aria-labelledby="sd-curvature-title">
       <div class="sd-card-body">
-        <p class="sd-card-meta">Experimental liquid-interface measurements · supplied by Peter W. Voorhees</p>
-        <h3 id="sd-curvature-title">See the curvature at the narrowing neck</h3>
+        <p class="sd-card-meta">Al&ndash;Cu alloy · 565 °C · synchrotron X-ray tomography · study published 2010</p>
+        <h3 id="sd-curvature-title">An X-ray experiment reveals the neck&rsquo;s curvature</h3>
         <p>
-          Peter also supplied these five measured interface shapes, coloured by mean curvature.
-          Follow the sequence from a connected neck to separation: the neck moves towards the
-          blue, violet and black end of the supplied scale as its signed mean curvature becomes
-          more negative. The colour reveals local geometry, which an outline alone cannot show.
+          These are <strong>three-dimensional reconstructions of experimental measurements</strong>.
+          A computer is used to reconstruct and display the measured interface; the sequence is
+          not a simulated evolution of the diffusion equation. Peter supplied the original images,
+          and the same sequence appears in
+          <a href="https://www.psi.ch/en/news/media-releases/researchers-find-universal-law-for-material-evolution">PSI&rsquo;s account of the experiment</a>.
         </p>
+        <p>
+          <strong>The experiment.</strong> Aagesen and colleagues studied an aluminium alloy
+          containing 15% copper by mass, held at 565&nbsp;&deg;C. At this temperature the sample
+          contains both solid and liquid: the object shown is a liquid rod within a solid,
+          aluminium-rich matrix. They followed its changing shape using synchrotron X-ray
+          tomographic microscopy at the TOMCAT beamline of the Swiss Light Source, Paul Scherrer
+          Institut. X-ray projections taken as the sample rotates reconstruct its internal
+          structure in three dimensions; repeated scans reveal how the neck thins and separates.
+        </p>
+        <p>
+          <strong>From scans to coloured surfaces.</strong> The study converted the tomograms into
+          solid and liquid regions, smoothed reconstruction artefacts, and visualised individual
+          pinching events in Amira. The displayed surface is the boundary between the phases.
+          Its colours show local mean curvature: blue, violet and black indicate increasingly
+          negative values on the supplied scale as the neck narrows. They describe the geometry,
+          rather than the material&rsquo;s visible colour or temperature.
+        </p>
+        <p>
+          <strong>The physical mechanism.</strong> Interfacial energy drives redistribution of copper
+          by <strong>bulk diffusion through the liquid</strong>. The paper also computes theoretical
+          similarity shapes using a boundary-integral method and compares them with the measured
+          interfaces. Those numerical predictions are a separate part of the study; this viewer
+          shows the experimental reconstructions.
+        </p>
+        <a class="sd-card-citation" href="https://doi.org/10.1038/nphys1737"
+          >Aagesen et al. (2010), <em>Nature Physics</em> &mdash; experiment and data-analysis methods</a
+        >
       </div>
       <figure class="sd-card-visual sd-curvature-viewer" data-curvature-viewer>
         <div class="sd-curvature-controls" role="group" aria-label="Choose an interface stage" hidden>
@@ -318,11 +346,12 @@ nav_order: 2.5
         </div>
         <p class="sd-curvature-status" aria-live="polite" aria-atomic="true" hidden>Stage 1 of 5 · Connected neck</p>
         <figcaption>
-          Experimental interface shapes from Peter W. Voorhees&rsquo; supplied images, reproduced
-          with permission. Stages follow the supplied order, with the original axes and colour
-          bars intact; click an image to open it at full size. Spatial axes are in micrometres.
-          Acquisition times and curvature units were not specified. These are additional images,
-          distinct from the published Fig. 1 above.
+          Experimental liquid&ndash;solid interface reconstructions from the Al&ndash;Cu study.
+          Image credit: A. E. Johnson and P. W. Voorhees, Northwestern University. Originals
+          supplied by Peter W. Voorhees and reproduced with permission. Stages follow the supplied
+          order; click an image to open it at full size. Spatial axes are in micrometres and the
+          original mean-curvature colour bars are intact. The supplied slides give neither frame
+          times nor curvature units, so the times in published Fig. 1 above are not assigned here.
         </figcaption>
       </figure>
       <p class="sd-pinchoff-lens">
@@ -598,8 +627,11 @@ nav_order: 2.5
     <p>
       The liquid-rod time sequence from Aagesen et al. (2010), Fig. 1, is reproduced with the
       permission of Peter W. Voorhees; rights remain with Macmillan Publishers Limited. The five
-      additional mean-curvature images were supplied by Peter W. Voorhees and are reproduced with
-      permission, preserving their original axes and colour scales.
+      additional mean-curvature images are credited to A. E. Johnson and P. W. Voorhees,
+      Northwestern University, in
+      <a href="https://www.psi.ch/en/news/media-releases/researchers-find-universal-law-for-material-evolution">PSI&rsquo;s 2010 account of the experiment</a>.
+      Peter W. Voorhees supplied the originals, reproduced here with permission and with their
+      original axes and colour scales intact.
     </p>
   </section>
 </div>
