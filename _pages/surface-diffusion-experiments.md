@@ -8,6 +8,8 @@ nav_order: 2.5
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/surface-diffusion-gallery.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/voorhees-curvature.css' | relative_url }}" />
+<script src="{{ '/assets/js/voorhees-curvature.js' | relative_url }}" defer></script>
 
 <div class="sd-gallery-page">
   <section class="sd-hero" aria-labelledby="sd-hero-title">
@@ -98,7 +100,7 @@ nav_order: 2.5
       <div>
         <h2 id="sd-gallery-title">Examples</h2>
         <p>
-          Each example below is built around a figure from the cited paper. Experimental and
+          Each example below is built around a published figure or an image supplied by a researcher. Experimental and
           simulated panels are identified in the caption.
         </p>
       </div>
@@ -239,8 +241,8 @@ nav_order: 2.5
           <p class="sd-card-meta">Al&ndash;Cu liquid rod · 565 °C · 2010</p>
           <h3>Bulk diffusion has its own universal pinchoff</h3>
           <p>
-            Time-resolved synchrotron tomography follows a liquid rod through the last 27.5 minutes
-            before separation. Copper is transported through the high-diffusivity liquid phase,
+            Time-resolved synchrotron tomography follows a liquid rod through a 27.5-minute interval
+            spanning separation. Copper is transported through the high-diffusivity liquid phase,
             rather than along the interface, yet the neck still approaches a conical pinch.
           </p>
           <a class="sd-card-citation" href="https://doi.org/10.1038/nphys1737"
@@ -257,7 +259,8 @@ nav_order: 2.5
           />
           <figcaption>
             Liquid-rod pinchoff at 142.5, 155, 165 and 170 minutes, Aagesen et al. (2010),
-            Fig. 1. Image supplied by Peter W. Voorhees; rights remain with the publisher.
+            Fig. 1. Reproduced with the permission of Peter W. Voorhees; rights remain with
+            Macmillan Publishers Limited.
           </figcaption>
         </figure>
         <p class="sd-pinchoff-lens">
@@ -268,6 +271,67 @@ nav_order: 2.5
         </p>
       </article>
     </div>
+
+    <article class="sd-card sd-curvature-card" aria-labelledby="sd-curvature-title">
+      <div class="sd-card-body">
+        <p class="sd-card-meta">Experimental liquid-interface measurements · supplied by Peter W. Voorhees</p>
+        <h3 id="sd-curvature-title">See the curvature at the narrowing neck</h3>
+        <p>
+          Peter also supplied these five measured interface shapes, coloured by mean curvature.
+          Follow the sequence from a connected neck to separation: the neck moves towards the
+          blue, violet and black end of the supplied scale as its signed mean curvature becomes
+          more negative. The colour reveals local geometry, which an outline alone cannot show.
+        </p>
+      </div>
+      <figure class="sd-card-visual sd-curvature-viewer" data-curvature-viewer>
+        <div class="sd-curvature-controls" role="group" aria-label="Choose an interface stage" hidden>
+          <button type="button" aria-controls="sd-curvature-1" aria-pressed="true" data-stage="0">Stage 1</button>
+          <button type="button" aria-controls="sd-curvature-2" aria-pressed="false" data-stage="1">Stage 2</button>
+          <button type="button" aria-controls="sd-curvature-3" aria-pressed="false" data-stage="2">Stage 3</button>
+          <button type="button" aria-controls="sd-curvature-4" aria-pressed="false" data-stage="3">Stage 4</button>
+          <button type="button" aria-controls="sd-curvature-5" aria-pressed="false" data-stage="4">Stage 5</button>
+        </div>
+        <div class="sd-curvature-frame" id="sd-curvature-1">
+          <a href="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-1.png' | relative_url }}" aria-label="Open stage 1 at full size">
+            <img src="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-1.png' | relative_url }}" width="1120" height="784" loading="lazy" alt="Stage 1: a connected liquid-interface neck, coloured by signed mean curvature, with spatial axes in micrometres and the original colour bar" />
+          </a>
+        </div>
+        <div class="sd-curvature-frame" id="sd-curvature-2">
+          <a href="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-2.png' | relative_url }}" aria-label="Open stage 2 at full size">
+            <img src="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-2.png' | relative_url }}" width="1120" height="784" loading="lazy" alt="Stage 2: a narrower connected neck with a blue region at the waist, retaining the original spatial axes and mean-curvature colour bar" />
+          </a>
+        </div>
+        <div class="sd-curvature-frame" id="sd-curvature-3">
+          <a href="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-3.png' | relative_url }}" aria-label="Open stage 3 at full size">
+            <img src="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-3.png' | relative_url }}" width="1120" height="784" loading="lazy" alt="Stage 3: further neck thinning and more negative mean curvature near the waist, on the original colour scale" />
+          </a>
+        </div>
+        <div class="sd-curvature-frame" id="sd-curvature-4">
+          <a href="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-4.png' | relative_url }}" aria-label="Open stage 4 at full size">
+            <img src="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-4.png' | relative_url }}" width="1120" height="784" loading="lazy" alt="Stage 4: a very thin connected neck with a violet and black waist on the supplied mean-curvature scale" />
+          </a>
+        </div>
+        <div class="sd-curvature-frame" id="sd-curvature-5">
+          <a href="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-5.png' | relative_url }}" aria-label="Open stage 5 at full size">
+            <img src="{{ '/assets/img/surface-diffusion/voorhees-mean-curvature-stage-5.png' | relative_url }}" width="1120" height="784" loading="lazy" alt="Stage 5: the liquid interface has separated into two pieces, retaining the original spatial axes and mean-curvature colour bar" />
+          </a>
+        </div>
+        <p class="sd-curvature-status" aria-live="polite" aria-atomic="true" hidden>Stage 1 of 5 · Connected neck</p>
+        <figcaption>
+          Experimental interface shapes from Peter W. Voorhees&rsquo; supplied images, reproduced
+          with permission. Stages follow the supplied order, with the original axes and colour
+          bars intact; click an image to open it at full size. Spatial axes are in micrometres.
+          Acquisition times and curvature units were not specified. These are additional images,
+          distinct from the published Fig. 1 above.
+        </figcaption>
+      </figure>
+      <p class="sd-pinchoff-lens">
+        <strong>Why is this important? </strong> Curvature helps set the interfacial chemical potential
+        that drives redistribution of material. Identifying the transport law still requires
+        evidence of where material moves and how the neck changes with time; a curvature map alone
+        does not distinguish bulk diffusion from surface diffusion.
+      </p>
+    </article>
 
     <h3 class="sd-chapter"><span>An engineering consequence</span></h3>
     <div class="sd-card-grid">
@@ -516,7 +580,7 @@ nav_order: 2.5
     <h2 id="sd-sources-title">Sources and image credits</h2>
     <p>
       Every scientific image on this page is attached to the specific claim it supports and is
-      identified by paper and figure number in its caption. No image is AI-generated. The conical
+      identified by paper and figure number, or by its contributing researcher, in its caption. No image is AI-generated. The conical
       profile is regenerated numerically from the certified equation.
     </p>
     <p>
@@ -532,9 +596,10 @@ nav_order: 2.5
       resolution for scholarly commentary; rights remain with the publishers.
     </p>
     <p>
-      The liquid-rod time sequence from Aagesen et al. (2010), Fig. 1, was supplied by Peter W.
-      Voorhees and is reproduced at reduced resolution for scholarly comparison; rights remain with
-      Macmillan Publishers Limited.
+      The liquid-rod time sequence from Aagesen et al. (2010), Fig. 1, is reproduced with the
+      permission of Peter W. Voorhees; rights remain with Macmillan Publishers Limited. The five
+      additional mean-curvature images were supplied by Peter W. Voorhees and are reproduced with
+      permission, preserving their original axes and colour scales.
     </p>
   </section>
 </div>
