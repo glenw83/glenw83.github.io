@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-This page lists recent talks in the Geometric Analysis Seminar at the University of Wollongong.
+This page lists recent talks in the Geometric Analysis Seminar at the University of Wollongong, together with related School seminars.
 
 The aim is to keep talks understandable and useful to students and staff from a range of backgrounds.
 
@@ -16,6 +16,15 @@ The seminar is usually held in-person. If you would like to attend online, pleas
 Would you like to be added to the mailing list for the seminar? Are you interested in giving a talk yourself? Let me know!
 
 ### Recent seminars
+
+#### 24 September 2026 — *Mathematical Perspectives on Extreme Wildfire Dynamics*
+**Speaker:** Jason Sharples (UNSW Canberra)  
+**Time and location:** 11:00–12:00, Room 6.210.  
+**School seminar hosted by Valentina Wheeler.**
+
+*Abstract.* Most wildfire spread models assume that fires evolve through a sequence of quasi-steady equilibrium states. Yet many of the most destructive fires exhibit rapid, nonlinear transitions that fall outside this paradigm. In this talk, I will examine how feedbacks between fire, atmosphere, and landscape can produce dynamic modes of spread associated with sudden fire escalation and extreme behaviour.
+
+Drawing on mathematical models, coupled fire-atmosphere simulations, and observations from major wildfire events, I will show how ideas from dynamical systems, fluid mechanics, and nonlinear processes can provide insight into phenomena such as junction fires, lateral spread, and pyroconvective development. The talk will highlight both the power and limitations of current modelling approaches, and illustrate how mathematics can help us better understand, and ultimately predict, extreme wildfire behaviour.
 
 #### 1 September 2026 — *Pinchoff for surface diffusion*
 **Speaker:** Glen Wheeler (UOW) 
@@ -43,7 +52,7 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 *Abstract.* Geodesics are among the most fundamental objects in Riemannian geometry, with closed geodesics being of particular interest. However, detecting when geodesics are closed is difficult in general, and the problem of classifying all closed geodesics on a given Riemannian manifold is challenging even under strong symmetry assumptions. In this talk, I will focus on three-dimensional Lie groups equipped with arbitrary left-invariant metrics; in this situation, the geodesic equation reduces to a first-order ODE on the Lie algebra known as the Euler-Arnold equation. I will discuss how this reduction can be used to analyse the existence and structure of closed geodesics in this setting.
 
 #### 29 June 2026 - *Conformal geometry, tractor calculus, and the geometry of scale*
-**Speaker:** Rod Gover
+**Speaker:** Rod Gover (University of Auckland)
 **Time and Location:** 11:00-12:00, Room 39C.174.
 
 *Abstract:* Conformal geometry has a long history of importance in mathematics and physics.  We review the definitions and problems of elementary conformal geometry and then introduce the conformal tractor connection, which leads to the basic invariant calculus of conformal geometry. In this context the prolongation of overdetermined PDE will also be described, as well as why the tools introduced are fundamentally linked to a range of PDE problems that arise in geometric analysis and GR.
