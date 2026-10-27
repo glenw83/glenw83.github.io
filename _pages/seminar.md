@@ -15,6 +15,19 @@ The seminar is usually held in-person. If you would like to attend online, pleas
 
 Would you like to be added to the mailing list for the seminar? Are you interested in giving a talk yourself? Let me know!
 
+### Upcoming seminars
+
+#### 29 October 2026 — *A Necessary and Sufficient Condition for Steady Euler Flows to be Shear Flows in an Infinite Strip*
+**Speaker:** Xiaofan Wang (University of Macau)  
+**Time and location:** 13:30–14:30, Room 39C.174.  
+**Host:** Kwok Kun Kwong.
+
+*Abstract.* We study two-dimensional steady incompressible Euler flows in an infinite strip under slip boundary conditions. A natural question concerns identifying geometric conditions under which such flows must be parallel shears. This question has attracted much attention only in the recent decade, during which many important results have emerged. While several rigidity results provide sufficient conditions, our aim is to establish a necessary and sufficient characterization that also allows for stagnation points. We show that a steady Euler flow is a parallel shear flow if and only if almost every regular streamline traverses the strip longitudinally. The proof relies on geometric estimates and analysis of the asymptotic behavior of solutions at far fields.
+
+This is joint work with Changfeng Gui, Huan Xu, and Wen Yang (University of Macau).
+
+*About the speaker.* Ms. Xiaofan Wang is a third-year PhD student in mathematics at the University of Macau, under the supervision of Professor Changfeng Gui. Her current research focuses on the rigidity properties of two-dimensional steady incompressible Euler flows and their variable-density counterparts.
+
 ### Recent seminars
 
 #### 24 September 2026 — *Mathematical Perspectives on Extreme Wildfire Dynamics*
