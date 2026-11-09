@@ -17,6 +17,16 @@ Would you like to be added to the mailing list for the seminar? Are you interest
 
 ### Upcoming seminars
 
+#### Wednesday 18 November 2026 — *Singularities for surface diffusion flow*
+**Speaker:** Glen Wheeler (University of Wollongong)  
+**Time and location:** 10:30–11:30 am AEDT, Room 39C.174.
+
+*Abstract.* Mullins introduced surface diffusion to explain the grooves that form where grain boundaries meet the surface of a heated solid. The flow decreases surface area and preserves enclosed volume, yet it can amplify small variations in the radius of a wire. I will use experiments on metallic filaments to explain the pinchoff problem, then discuss what curvature concentration and self-similar solutions tell us about the shape of a singularity.
+
+I will show how to construct smooth, closed, embedded surfaces that pinch in finite time. On a torus the central hole closes. On a dumbbell the neck between the two lobes collapses. Both surfaces stay smooth away from a single point. Magnifying either waist gives the same conical shrinker, and the waist radius decays like the fourth root of the time remaining. I will explain how to certify the neck profile predicted by numerical work in 1998 and how to choose initial data whose evolution realises it.
+
+### Recent seminars
+
 #### 29 October 2026 — *A Necessary and Sufficient Condition for Steady Euler Flows to be Shear Flows in an Infinite Strip*
 **Speaker:** Xiaofan Wang (University of Macau)  
 **Time and location:** 13:30–14:30, Room 39C.174.  
@@ -28,7 +38,6 @@ This is joint work with Changfeng Gui, Huan Xu, and Wen Yang (University of Maca
 
 *About the speaker.* Ms. Xiaofan Wang is a third-year PhD student in mathematics at the University of Macau, under the supervision of Professor Changfeng Gui. Her current research focuses on the rigidity properties of two-dimensional steady incompressible Euler flows and their variable-density counterparts.
 
-### Recent seminars
 
 #### 24 September 2026 — *Mathematical Perspectives on Extreme Wildfire Dynamics*
 **Speaker:** Jason Sharples (UNSW Canberra)  
