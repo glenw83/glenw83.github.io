@@ -12,7 +12,7 @@ profile:
   more_info:
 ---
 
-_Last updated: 15 September 2026._
+_Last updated: 19 November 2026._
 
 <!-- _pages/publications.md -->
 
